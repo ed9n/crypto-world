@@ -5,10 +5,10 @@ import MenuItem from "./components/MenuItem";
 const Menu = () => {
     return(
         <div className={style.menu}>
-            <MenuItem to="/Home" title="Home" children />
-            <MenuItem to="/Cryptocurrencies" title="Cryptocurrencies" children/>
-            <MenuItem to="/Exchanges" title="Exchanges" children/>
-            <MenuItem to="/News" title="News" children/>
+            <MenuItem to="/Home" children="Home" />
+            <MenuItem to="/Cryptocurrencies" children="Cryptocurrencies"/>
+            <MenuItem to="/Exchanges" children="Exchanges"/>
+            <MenuItem to="/News" children="News"/>
         </div>
     )
 }

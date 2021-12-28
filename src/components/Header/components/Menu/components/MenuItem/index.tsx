@@ -2,11 +2,7 @@ import React from "react";
 import { NavLinkProps, NavLink } from "react-router-dom";
 import style from "./style.module.scss"
 
-interface Active extends NavLinkProps {
-    getClass?: () => void
-}
-
-const MenuItem = (props: Active) => {
+const MenuItem = (props: NavLinkProps) => {
 
     const getClass = (state: any) => {
         return style.item + (state.isActive ? ` ${style.active}` : '')
@@ -16,7 +12,7 @@ const MenuItem = (props: Active) => {
         <NavLink
             {...props}
             className={getClass}>
-            {props.title}
+            {props.children}
         </NavLink>
     )
 }
