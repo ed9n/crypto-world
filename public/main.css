@@ -1,4 +1,46 @@
+/*!**********************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/Header/style.module.scss ***!
+  \**********************************************************************************************************************************/
+.gQGUvMDEepTC9riZ04uF {
+  display: flex;
+  flex-direction: column;
+  background-color: #02060B;
+  min-height: 100vh;
+}
+/*!**************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/Header/components/Logo/style.module.scss ***!
+  \**************************************************************************************************************************************************/
+.gFzuE2kv50fn5MTWpv9f {
+  width: 200px;
+}
+/*!**************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/Header/components/Menu/style.module.scss ***!
+  \**************************************************************************************************************************************************/
+.Qym5BzR8m8nJAAXd3K_p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/*!**********************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/Header/components/Menu/components/MenuItem/style.module.scss ***!
+  \**********************************************************************************************************************************************************************/
+.D8JfWrjhucC3L69qgDj8 {
+  font-size: 20px;
+  text-decoration: none;
+  margin-bottom: 15px;
+  color: white;
+}
+.D8JfWrjhucC3L69qgDj8:last-child {
+  margin-bottom: 0px;
+}
+
+.wV10Awx1Q99968Gly0Go {
+  color: #FFDE59;
+}
 /*!*******************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/App/style.module.scss ***!
   \*******************************************************************************************************************************/
-
+.BseglIEgZPHUDCbxunDB {
+  display: flex;
+}

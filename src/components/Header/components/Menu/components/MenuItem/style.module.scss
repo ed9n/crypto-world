@@ -1,3 +1,14 @@
+.item{
+    font-size: 20px;
+    text-decoration: none;
+    margin-bottom: 15px;
+    color: rgb(255, 255, 255);
+    font-family: Open Sans;
+    &:last-child{
+        margin-bottom: 0px;
+    } 
+}
+
 .active{
-    color: rgb(255, 255, 21);
+    color: #FFDE59;
 } 

@@ -4,7 +4,7 @@ import MenuItem from "./components/MenuItem";
 
 const Menu = () => {
     return(
-        <div>
+        <div className={style.menu}>
             <MenuItem to="/Home" title="Home" children />
             <MenuItem to="/Cryptocurrencies" title="Cryptocurrencies" children/>
             <MenuItem to="/Exchanges" title="Exchanges" children/>

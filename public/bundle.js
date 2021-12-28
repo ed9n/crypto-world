@@ -136,7 +136,47 @@ eval("\n\nif (false) {} else {\n  module.exports = __webpack_require__(/*! ./cjs
   \**********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// extracted by mini-css-extract-plugin\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({});\n\n//# sourceURL=webpack://crypto-world/./src/components/App/style.module.scss?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// extracted by mini-css-extract-plugin\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\"App\":\"BseglIEgZPHUDCbxunDB\"});\n\n//# sourceURL=webpack://crypto-world/./src/components/App/style.module.scss?");
+
+/***/ }),
+
+/***/ "./src/components/Header/components/Logo/style.module.scss":
+/*!*****************************************************************!*\
+  !*** ./src/components/Header/components/Logo/style.module.scss ***!
+  \*****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// extracted by mini-css-extract-plugin\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\"logo\":\"gFzuE2kv50fn5MTWpv9f\"});\n\n//# sourceURL=webpack://crypto-world/./src/components/Header/components/Logo/style.module.scss?");
+
+/***/ }),
+
+/***/ "./src/components/Header/components/Menu/components/MenuItem/style.module.scss":
+/*!*************************************************************************************!*\
+  !*** ./src/components/Header/components/Menu/components/MenuItem/style.module.scss ***!
+  \*************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// extracted by mini-css-extract-plugin\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\"item\":\"D8JfWrjhucC3L69qgDj8\",\"active\":\"wV10Awx1Q99968Gly0Go\"});\n\n//# sourceURL=webpack://crypto-world/./src/components/Header/components/Menu/components/MenuItem/style.module.scss?");
+
+/***/ }),
+
+/***/ "./src/components/Header/components/Menu/style.module.scss":
+/*!*****************************************************************!*\
+  !*** ./src/components/Header/components/Menu/style.module.scss ***!
+  \*****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// extracted by mini-css-extract-plugin\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\"menu\":\"Qym5BzR8m8nJAAXd3K_p\"});\n\n//# sourceURL=webpack://crypto-world/./src/components/Header/components/Menu/style.module.scss?");
+
+/***/ }),
+
+/***/ "./src/components/Header/style.module.scss":
+/*!*************************************************!*\
+  !*** ./src/components/Header/style.module.scss ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// extracted by mini-css-extract-plugin\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\"header\":\"gQGUvMDEepTC9riZ04uF\"});\n\n//# sourceURL=webpack://crypto-world/./src/components/Header/style.module.scss?");
 
 /***/ }),
 
@@ -150,13 +190,43 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/components/Header/components/Logo/index.tsx":
+/*!*********************************************************!*\
+  !*** ./src/components/Header/components/Logo/index.tsx ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var _img_logo_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./img/logo.svg */ \"./src/components/Header/components/Logo/img/logo.svg\");\n/* harmony import */ var _style_module_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./style.module.scss */ \"./src/components/Header/components/Logo/style.module.scss\");\n\n\n\nvar Logo = function () {\n    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", null,\n        react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"a\", { href: \"\" },\n            react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"img\", { src: _img_logo_svg__WEBPACK_IMPORTED_MODULE_1__, className: _style_module_scss__WEBPACK_IMPORTED_MODULE_2__[\"default\"].logo }))));\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Logo);\n\n\n//# sourceURL=webpack://crypto-world/./src/components/Header/components/Logo/index.tsx?");
+
+/***/ }),
+
+/***/ "./src/components/Header/components/Menu/components/MenuItem/index.tsx":
+/*!*****************************************************************************!*\
+  !*** ./src/components/Header/components/Menu/components/MenuItem/index.tsx ***!
+  \*****************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ \"./node_modules/react-router-dom/index.js\");\n/* harmony import */ var _style_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.module.scss */ \"./src/components/Header/components/Menu/components/MenuItem/style.module.scss\");\nvar __assign = (undefined && undefined.__assign) || function () {\n    __assign = Object.assign || function(t) {\n        for (var s, i = 1, n = arguments.length; i < n; i++) {\n            s = arguments[i];\n            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))\n                t[p] = s[p];\n        }\n        return t;\n    };\n    return __assign.apply(this, arguments);\n};\n\n\n\nvar MenuItem = function (props) {\n    var getClass = function (state) {\n        return _style_module_scss__WEBPACK_IMPORTED_MODULE_1__[\"default\"].item + (state.isActive ? \" \".concat(_style_module_scss__WEBPACK_IMPORTED_MODULE_1__[\"default\"].active) : '');\n    };\n    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.NavLink, __assign({}, props, { className: getClass }), props.title));\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (MenuItem);\n\n\n//# sourceURL=webpack://crypto-world/./src/components/Header/components/Menu/components/MenuItem/index.tsx?");
+
+/***/ }),
+
+/***/ "./src/components/Header/components/Menu/index.tsx":
+/*!*********************************************************!*\
+  !*** ./src/components/Header/components/Menu/index.tsx ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var _style_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.module.scss */ \"./src/components/Header/components/Menu/style.module.scss\");\n/* harmony import */ var _components_MenuItem__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/MenuItem */ \"./src/components/Header/components/Menu/components/MenuItem/index.tsx\");\n\n\n\nvar Menu = function () {\n    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", { className: _style_module_scss__WEBPACK_IMPORTED_MODULE_1__[\"default\"].menu },\n        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_MenuItem__WEBPACK_IMPORTED_MODULE_2__[\"default\"], { to: \"/Home\", title: \"Home\", children: true }),\n        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_MenuItem__WEBPACK_IMPORTED_MODULE_2__[\"default\"], { to: \"/Cryptocurrencies\", title: \"Cryptocurrencies\", children: true }),\n        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_MenuItem__WEBPACK_IMPORTED_MODULE_2__[\"default\"], { to: \"/Exchanges\", title: \"Exchanges\", children: true }),\n        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_MenuItem__WEBPACK_IMPORTED_MODULE_2__[\"default\"], { to: \"/News\", title: \"News\", children: true })));\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Menu);\n\n\n//# sourceURL=webpack://crypto-world/./src/components/Header/components/Menu/index.tsx?");
+
+/***/ }),
+
 /***/ "./src/components/Header/index.tsx":
 /*!*****************************************!*\
   !*** ./src/components/Header/index.tsx ***!
   \*****************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar Header = function () {\n    var heloo = 'hello';\n    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", null, heloo));\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Header);\n\n\n//# sourceURL=webpack://crypto-world/./src/components/Header/index.tsx?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var _style_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.module.scss */ \"./src/components/Header/style.module.scss\");\n/* harmony import */ var _components_Logo__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Logo */ \"./src/components/Header/components/Logo/index.tsx\");\n/* harmony import */ var _components_Menu__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Menu */ \"./src/components/Header/components/Menu/index.tsx\");\n\n\n\n\nvar Header = function () {\n    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", { className: _style_module_scss__WEBPACK_IMPORTED_MODULE_1__[\"default\"].header },\n        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Logo__WEBPACK_IMPORTED_MODULE_2__[\"default\"], null),\n        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Menu__WEBPACK_IMPORTED_MODULE_3__[\"default\"], null)));\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Header);\n\n\n//# sourceURL=webpack://crypto-world/./src/components/Header/index.tsx?");
 
 /***/ }),
 
@@ -167,6 +237,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ \"./node_modules/react-router-dom/index.js\");\n/* harmony import */ var _components_App__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/App */ \"./src/components/App/index.tsx\");\n\n\n\n\nvar element = document.querySelector('#root');\nreact_dom__WEBPACK_IMPORTED_MODULE_1__.render(react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.BrowserRouter, null,\n    react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_App__WEBPACK_IMPORTED_MODULE_2__[\"default\"], null)), element);\n\n\n//# sourceURL=webpack://crypto-world/./src/index.tsx?");
+
+/***/ }),
+
+/***/ "./src/components/Header/components/Logo/img/logo.svg":
+/*!************************************************************!*\
+  !*** ./src/components/Header/components/Logo/img/logo.svg ***!
+  \************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"8b33917dc85cc8ff2bb5.svg\";\n\n//# sourceURL=webpack://crypto-world/./src/components/Header/components/Logo/img/logo.svg?");
 
 /***/ }),
 
@@ -219,6 +299,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -233,6 +325,26 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /************************************************************************/
