@@ -17,6 +17,13 @@
             font-size: 17px;
             font-family: Open Sans;
             font-weight: 600;
+            text-decoration: none;
+            color: #1467ee;
+
+            &:hover{
+                color: gray ;
+                transition: all 0.2s linear;
+            }
         }
     }
 

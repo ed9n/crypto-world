@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import style from "./style.module.scss";
 import Coins from "./components/Coin";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 const CoinTable = () => {
     const [coins, setCoins] = useState([]);
@@ -29,7 +30,7 @@ const CoinTable = () => {
         <div className={style.coinTable}>
             <div className={style.coinTable_texts}>
                 <h2 className={style.coinTable_main_text}>Top 10 Cryptos in The World</h2>
-                <a className={style.coinTable_link}>Show more</a>
+                <div ><Link className={style.coinTable_link} to='/Cryptocurrencies'>Show more</Link></div>
             </div>
 
 

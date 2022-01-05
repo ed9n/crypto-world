@@ -1,14 +1,20 @@
 import React from "react";
 import style from "./style.module.scss";
-import GlobalCryptoStats from "./components/GlobalCryptoStats";
-import CoinTable from "./components/CoinTable";
+import HomePage from "../../pages/HomePage";
+import { Route, Routes } from "react-router-dom";
 
 const Content = () => {
-    return(
+    return (
+
         <div className={style.content}>
-            <GlobalCryptoStats/>
-            <CoinTable/>
+            <Routes>
+                <Route path="/Home" element={<HomePage/>} />
+
+            </Routes>
         </div>
+
+
+
     )
 }
 
