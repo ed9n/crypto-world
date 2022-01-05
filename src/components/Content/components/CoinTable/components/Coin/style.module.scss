@@ -1,0 +1,75 @@
+.coin{
+    margin: 0 20px 20px 20px;
+    padding: 16px;
+    background-color: rgb(255, 255, 255);
+    
+
+    .coin_firt_block{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+        font-weight: bold;
+        
+        img{
+            width: 20px;
+            
+        }
+    
+        .coin_name{
+            font-family: Open Sans;
+            font-size: 12px;
+        }
+    }
+
+    .coin_second_block{
+        font-family: Open Sans;
+
+        .price{
+            display: flex;
+            
+            .price_text{
+                margin: 0 5px 15px 0;
+                font-size: 12px;
+
+            }
+            .price_number{
+                font-size: 12px;
+                font-weight: 600;
+            }
+        }
+        
+
+        .market{
+            display: flex;
+            
+            .market_text{
+                margin: 0 5px 15px 0;
+                font-size: 12px;
+
+            }
+            .market_number{
+                font-size: 12px;
+                font-weight: 600;
+            }
+        }
+
+        .daily{
+            display: flex;
+            
+            .daily_text{
+                margin: 0 5px 15px 0;
+                font-size: 12px;
+
+            }
+            .daily_number{
+                font-size: 12px;
+                font-weight: 600;
+            }
+        }
+    }
+
+    
+
+    
+}

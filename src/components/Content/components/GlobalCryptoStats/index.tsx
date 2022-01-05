@@ -42,9 +42,9 @@ const GlobalCryptoStats = () => {
 
     return (
         <div className={style.globalStats} >
-            <div className={style.glovalStats_text}>
+            <h2 className={style.glovalStats_text}>
                 Global Crypto Stats
-            </div>
+            </h2>
             <TotalCoins stats={coinStat} />
             <Total24hVolume stats={coinStat} />
             <TotalExchanges stats={coinStat} />

@@ -1,0 +1,28 @@
+.coinTable{
+    padding: 16px;
+    align-items: center;
+    background-color: #8080801f;
+
+    .coinTable_texts{
+        display: flex;
+        justify-content: space-between;
+
+        .coinTable_main_text{
+            margin-bottom: 20px;
+            font-size: 25px;
+            font-family: Open Sans;
+        }
+
+        .coinTable_link{
+            font-size: 17px;
+            font-family: Open Sans;
+            font-weight: 600;
+        }
+    }
+
+    
+    .coinTable_blocks{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

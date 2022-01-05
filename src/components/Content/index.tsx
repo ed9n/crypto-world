@@ -1,12 +1,13 @@
 import React from "react";
-import GlobalCryptoStats from "./components/GlobalCryptoStats";
 import style from "./style.module.scss";
+import GlobalCryptoStats from "./components/GlobalCryptoStats";
+import CoinTable from "./components/CoinTable";
 
 const Content = () => {
     return(
         <div className={style.content}>
-            
             <GlobalCryptoStats/>
+            <CoinTable/>
         </div>
     )
 }
