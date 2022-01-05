@@ -5,9 +5,9 @@ import style from "./style.module.scss"
 const Logo = () => {
 
     return(
-        <div>
+        <div className={style.logo}>
             <a href="">
-                <img src={logo} className={style.logo}/>
+                <img src={logo} className={style.img}/>
             </a>
         </div>
     )
