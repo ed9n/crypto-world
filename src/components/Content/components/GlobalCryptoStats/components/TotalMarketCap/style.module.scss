@@ -1,0 +1,17 @@
+.marketCap{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-bottom: 30px;
+    font-family: Open Sans;
+
+    .marketCap_text{
+        font-size: 12px;
+        color: rgb(146 136 136);
+    }
+
+    .marketCap_number{
+        font-weight: 600;
+    }
+}

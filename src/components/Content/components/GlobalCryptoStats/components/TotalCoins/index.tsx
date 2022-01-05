@@ -16,13 +16,14 @@ export interface CoinStats {
 const TotalCoins: React.FC<{ stats: CoinStats }> = ({ stats }) => {
     const totalCoins = stats.totalCoins;
     const changeNumberToString = totalCoins.toString();
-    const newTotalCoins= changeNumberToString.slice(0, 2) + "," + changeNumberToString.slice(2);
+    const newTotalCoins = changeNumberToString.slice(0, 2) + "," + changeNumberToString.slice(2);
     return (
-        <div >
-            <div className={style.cryptocurrencies}>Total Cryptocurrencies
-                <div>
-                    {newTotalCoins}
-                </div>
+        <div className={style.cryptocurrencies}>
+            <div className={style.cryptocurrencies_text}>
+                Total Cryptocurrencies:
+            </div>
+            <div className={style.cryptocurrencies_number}>
+                {newTotalCoins}
             </div>
         </div>
     )

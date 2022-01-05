@@ -13,12 +13,15 @@ export interface CoinStats {
 
 
 
-const TotalExchanges: React.FC<{stats: CoinStats}> = ({stats}) => {
-  
-    return(
-        <div>
-            <div >Total Exchanges
-                <div>{stats.totalExchanges}</div>
+const TotalExchanges: React.FC<{ stats: CoinStats }> = ({ stats }) => {
+
+    return (
+        <div className={style.exchanges}>
+            <div className={style.exchanges_text}>
+                Total Exchanges:
+            </div>
+            <div className={style.exchanges_number}>
+                {stats.totalExchanges}
             </div>
         </div>
     )

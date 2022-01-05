@@ -1,11 +1,14 @@
 .globalStats{
     display: grid;
+    padding: 16px;
+    background-color: #8080801f;
     
-
-    .glovalStats_Text{
+    .glovalStats_text{
         grid-column-start: 1;
         grid-column-end: 3;
         margin-bottom: 20px;
         font-size: 25px;
+        font-family: Open Sans;
+        font-weight:600;
     }
 }

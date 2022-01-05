@@ -16,12 +16,13 @@ const Total24hVolume: React.FC<{ stats: CoinStats }> = ({ stats }) => {
     const newTotal24hVolume = changeNumberToString.slice(0, 3) + "." + changeNumberToString.slice(-1) + "B";
 
     return (
-        <div className={style.Total24h}>
-            <div >Total 24h Volume
-                <div className={style.statTotal24h}>
-                    {/* <img src={iconDollars} alt="" /> */}
-                    ${newTotal24hVolume}
-                </div>
+        <div className={style.total24h}>
+            <div className={style.total24h_text}>
+                Total 24h Volume:
+            </div>
+            <div className={style.total24h_number}>
+                {/* <img src={iconDollars} alt="" /> */}
+                ${newTotal24hVolume}
             </div>
         </div>
     )

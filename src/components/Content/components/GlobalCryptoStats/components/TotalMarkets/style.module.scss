@@ -1,0 +1,16 @@
+.markets{
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    font-family: Open Sans;
+
+    .markets_text{
+        font-size: 12px;
+        color: rgb(146 136 136);
+    }
+
+    .markets_number{
+        font-weight: 600;
+    }
+}

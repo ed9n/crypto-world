@@ -1,0 +1,17 @@
+.cryptocurrencies{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-bottom: 30px;
+    font-family: Open Sans;
+
+    .cryptocurrencies_text{
+        font-size: 12px;
+        color: rgb(146 136 136);
+    }
+    
+    .cryptocurrencies_number{
+        font-weight: 600;
+    }
+}

@@ -16,11 +16,12 @@ const TotalMarketCap: React.FC<{ stats: CoinStats }> = ({ stats }) => {
     const newTotalMarketCap = changeNumberToString.slice(0, 1) + "." + changeNumberToString.slice(-1) + "T";
 
     return (
-        <div>
-            <div >Total Market Cap
-                <div>
-                    ${newTotalMarketCap}
-                </div>
+        <div className={style.marketCap}>
+            <div className={style.marketCap_text}>
+                Total Market Cap:
+            </div>
+            <div className={style.marketCap_number}>
+                ${newTotalMarketCap}
             </div>
         </div>
     )

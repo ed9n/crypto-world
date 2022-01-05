@@ -1,0 +1,17 @@
+.exchanges{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin-bottom: 30px;
+    font-family: Open Sans;
+
+    .exchanges_text{
+        font-size: 12px;
+        color: rgb(146 136 136);
+    }
+
+    .exchanges_number{
+        font-weight: 600;
+    }
+}

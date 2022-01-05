@@ -1,17 +1,17 @@
-.Total24h{
-    margin: 20px;
+.total24h{
+    grid-row-start: 3;
+    grid-row-end: 4;
     grid-column-start: 2;
+    grid-column-end: 3;
+    font-family: Open Sans;
 
-    // .statTotal24h{
+    .total24h_text{
+        font-size: 12px;
+        color: rgb(146 136 136);
+    }
 
-    //     ::before{
-            
-    //     }
-    // }
-
-    img{
-        width: 20px;
-        
+    .total24h_number{
+        font-weight: 600;
     }
 }
 
