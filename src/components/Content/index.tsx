@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./style.module.scss";
 import HomePage from "../../pages/HomePage";
-import CryptocurrenciesPage from "../../pages/CryptocurrenciesPage";
+import CryptocurrenciesPage from "../../pages/CryptoCurrenciesPage";
 import { Route, Routes } from "react-router-dom";
 import DetailCoinPage from "../../pages/DetailCoinPage";
 

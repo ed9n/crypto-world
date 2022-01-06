@@ -2,24 +2,26 @@
     padding: 16px;
     align-items: center;
     background-color: #8080801f;
-
-    .coinTable_texts{
-        display: flex;
-        justify-content: space-between;
+    
+    .coinTable_text{
 
         .coinTable_main_text{
-            margin-bottom: 20px;
+            margin: 0 250px 20px 0;
             font-size: 25px;
             font-family: Open Sans;
         }
 
         .coinTable_link{
+           max-width: 940px;
+            display: flex;
+            justify-content: right;
             font-size: 17px;
             font-family: Open Sans;
             font-weight: 600;
             text-decoration: none;
             color: #1467ee;
-
+            margin-bottom: 20px;
+        
             &:hover{
                 color: gray ;
                 transition: all 0.2s linear;
@@ -27,9 +29,9 @@
         }
     }
 
-    
     .coinTable_blocks{
         display: flex;
         flex-wrap: wrap;
     }
+    
 }

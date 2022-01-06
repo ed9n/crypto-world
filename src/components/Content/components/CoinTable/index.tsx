@@ -27,21 +27,21 @@ const CoinTable = () => {
 
     return (
         <div className={style.coinTable}>
-            <div className={style.coinTable_texts}>
+            <div className={style.coinTable_text}>
                 <h2 className={style.coinTable_main_text}>Top 10 Cryptos in The World</h2>
                 <Link className={style.coinTable_link} to='/Cryptocurrencies'>Show more</Link>
             </div>
             <div className={style.coinTable_blocks}>
                 {coins.slice(0, 10).map(item => (
                     <Coins
-                    id={item.id}
-                    key={item.id}
-                    name={item.name}
-                    price={item.price}
-                    marketCap={item.marketCap}
-                    dailyChange={item.change}
-                    icon={item.iconUrl}
-                    rank={item.rank}
+                        id={item.id}
+                        key={item.id}
+                        name={item.name}
+                        price={item.price}
+                        marketCap={item.marketCap}
+                        dailyChange={item.change}
+                        icon={item.iconUrl}
+                        rank={item.rank}
                     />
                 ))}
             </div>
