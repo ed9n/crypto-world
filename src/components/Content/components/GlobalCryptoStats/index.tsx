@@ -36,7 +36,6 @@ const GlobalCryptoStats = () => {
             console.error(error);
 
         });
-
     }, [])
 
 

@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/ed9n/crypto-world#readme",
   "dependencies": {
+    "@types/dompurify": "^2.3.2",
+    "dompurify": "^2.3.4",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-redux": "^7.2.6",

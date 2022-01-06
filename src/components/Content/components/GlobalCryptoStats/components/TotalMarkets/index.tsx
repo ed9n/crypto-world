@@ -10,14 +10,16 @@ export interface CoinStats {
 }
 
 const TotalMarkets: React.FC<{ stats: CoinStats }> = ({ stats }) => {
-    const totalMarkets = stats.totalMarkets;
-    const changeNumberToString = totalMarkets.toString();
-    const newTotalMarkets = changeNumberToString.slice(0, 2) + "." + changeNumberToString.slice(-1) + "K";
+
+    const totalMarkets: number = stats.totalMarkets;
+    const changeNumberToString: string = totalMarkets.toString();
+    const newTotalMarkets: string = changeNumberToString.slice(0, 2) + "." + changeNumberToString.slice(-1) + "K";
+
     return (
         <div className={style.markets}>
-            <div className={style.markets_text}>
+            <p className={style.markets_text}>
                 Total Markets:
-            </div>
+            </p>
             <div className={style.markets_number}>
                 {newTotalMarkets}
             </div>

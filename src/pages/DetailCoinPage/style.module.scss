@@ -1,0 +1,42 @@
+
+.aboutCoin{
+    font-family: Open Sans;
+    font-size: 13px;
+}
+
+.description{
+    padding: 16px;
+
+    .blockIcon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+
+        .nameCoin{
+            font-family: Open Sans;
+            font-size: 20px;
+            margin-right: 15px;
+        }
+
+        img{
+            width: 40px;
+        }
+    }
+
+    h3{
+        margin: 15px 0 5px 0;
+    }
+
+    :last-child{
+        a{
+            text-decoration: none;
+
+            &:hover{
+                color: gray ;
+                transition: all 0.2s linear;
+            }
+        }
+    }
+}
+

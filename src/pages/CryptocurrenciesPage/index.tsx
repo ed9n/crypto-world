@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import style from "./style.module.scss";
-import Coins from "./components/Coins";
-import { Link } from "react-router-dom";
+import Coins from "components/Content/components/CoinTable/components/Coins";
 
-const CoinTable = () => {
+const CryptocurrenciesPage = () => {
 
     const [coins, setCoins] = useState([]);
 
@@ -25,14 +24,10 @@ const CoinTable = () => {
         });
     }, [])
 
-    return (
+    return(
         <div className={style.coinTable}>
-            <div className={style.coinTable_texts}>
-                <h2 className={style.coinTable_main_text}>Top 10 Cryptos in The World</h2>
-                <Link className={style.coinTable_link} to='/Cryptocurrencies'>Show more</Link>
-            </div>
             <div className={style.coinTable_blocks}>
-                {coins.slice(0, 10).map(item => (
+                {coins.map(item => (
                     <Coins
                     id={item.id}
                     key={item.id}
@@ -49,4 +44,4 @@ const CoinTable = () => {
     )
 }
 
-export default CoinTable
+export default CryptocurrenciesPage;

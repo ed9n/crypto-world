@@ -17,9 +17,9 @@ const TotalMarketCap: React.FC<{ stats: CoinStats }> = ({ stats }) => {
 
     return (
         <div className={style.marketCap}>
-            <div className={style.marketCap_text}>
+            <p className={style.marketCap_text}>
                 Total Market Cap:
-            </div>
+            </p>
             <div className={style.marketCap_number}>
                 ${newTotalMarketCap}
             </div>

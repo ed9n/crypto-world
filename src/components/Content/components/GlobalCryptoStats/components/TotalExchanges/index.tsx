@@ -9,17 +9,13 @@ export interface CoinStats {
     total24hVolume: number
 }
 
-
-
-
-
 const TotalExchanges: React.FC<{ stats: CoinStats }> = ({ stats }) => {
 
     return (
         <div className={style.exchanges}>
-            <div className={style.exchanges_text}>
+            <p className={style.exchanges_text}>
                 Total Exchanges:
-            </div>
+            </p>
             <div className={style.exchanges_number}>
                 {stats.totalExchanges}
             </div>

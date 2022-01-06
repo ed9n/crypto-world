@@ -10,18 +10,17 @@ export interface CoinStats {
 }
 
 const Total24hVolume: React.FC<{ stats: CoinStats }> = ({ stats }) => {
-    const total24hVolume = stats.total24hVolume;
-    const roundNumber = Math.round(total24hVolume * 10) / 10;
-    const changeNumberToString = roundNumber.toString();
-    const newTotal24hVolume = changeNumberToString.slice(0, 3) + "." + changeNumberToString.slice(-1) + "B";
+    const total24hVolume: number = stats.total24hVolume;
+    const roundNumber: number = Math.round(total24hVolume * 10) / 10;
+    const changeNumberToString: string = roundNumber.toString();
+    const newTotal24hVolume: string = changeNumberToString.slice(0, 3) + "." + changeNumberToString.slice(-1) + "B";
 
     return (
         <div className={style.total24h}>
-            <div className={style.total24h_text}>
+            <p className={style.total24h_text}>
                 Total 24h Volume:
-            </div>
+            </p>
             <div className={style.total24h_number}>
-                {/* <img src={iconDollars} alt="" /> */}
                 ${newTotal24hVolume}
             </div>
         </div>
