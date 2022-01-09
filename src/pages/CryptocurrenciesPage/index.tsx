@@ -1,11 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React, { createContext, useEffect, useRef, useState } from "react";
 import axios from "axios";
 import style from "./style.module.scss";
 import Coins from "components/Content/components/CoinTable/components/Coins";
+import * as _ from "lodash";
+import { debounce, filter } from "lodash";
+
 
 const CryptocurrenciesPage = () => {
 
     const [coins, setCoins] = useState([]);
+    const [value, setValue] = useState('');
 
     useEffect(() => {
         const options: any = {
@@ -24,19 +28,50 @@ const CryptocurrenciesPage = () => {
         });
     }, [])
 
-    return(
+
+    const onChangeHandler = (event: React.ChangeEvent<HTMLInputElement>) => {
+        setValue(event.target.value)
+    }
+
+    // const test = _.debounce(filterCoins(), 3000);
+
+    function filterCoins() {
+        if (value === '') {
+            return coins
+        } else {
+            const coinsFilter = coins.filter(item => {
+                const coinName: string = item.name.toLowerCase()
+                const inputValue: string = value.toLowerCase()
+                if (coinName === inputValue) {
+                    return true
+                } else {
+                    return false
+                }
+            })
+            return coinsFilter 
+        }
+    }
+
+    let coin = filterCoins()
+
+
+    return (
         <div className={style.coinTable}>
+            <div className={style.block_input}>
+                <input onChange={onChangeHandler} placeholder="Search Cryptocurrencies" />
+            </div>
+
             <div className={style.coinTable_blocks}>
-                {coins.map(item => (
+                {coin.map(item => (
                     <Coins
-                    id={item.id}
-                    key={item.id}
-                    name={item.name}
-                    price={item.price}
-                    marketCap={item.marketCap}
-                    dailyChange={item.change}
-                    icon={item.iconUrl}
-                    rank={item.rank}
+                        id={item.id}
+                        key={item.id}
+                        name={item.name}
+                        price={item.price}
+                        marketCap={item.marketCap}
+                        dailyChange={item.change}
+                        icon={item.iconUrl}
+                        rank={item.rank}
                     />
                 ))}
             </div>

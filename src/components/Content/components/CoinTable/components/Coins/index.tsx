@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import style from "./style.module.scss";
 
 const Coins: React.FC<{
@@ -17,7 +17,7 @@ const Coins: React.FC<{
     const newMarketCap: string = changeNumberToStringCap.slice(0, 3) + "." + changeNumberToStringCap.slice(-1) + "B";
 
     const changePrice: number = +price;
-    function round(num: number): number {
+    function roundPrice(num: number): number {
         if (num < 1) {
             const lessDollar: number = +changePrice.toPrecision(1);
             return lessDollar;
@@ -37,7 +37,7 @@ const Coins: React.FC<{
                 <div className={style.coin_second_block}>
                     <div className={style.price}>
                         <div className={style.price_text}>Price: </div>
-                        <div className={style.price_number}>${round(changePrice)}</div>
+                        <div className={style.price_number}>${roundPrice(changePrice)}</div>
                     </div>
                     <div className={style.market}>
                         <div className={style.market_text}>Market Cap: </div>
