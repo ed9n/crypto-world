@@ -9,8 +9,9 @@ const Coins: React.FC<{
     marketCap: number,
     dailyChange: number,
     icon: string,
-    rank: number 
- }> = ({ id, name, price, marketCap, dailyChange, icon, rank }) => {
+    rank: number,
+    uuid: string,
+ }> = ({ id, name, price, marketCap, dailyChange, icon, rank, uuid }) => {
 
     const cap = marketCap;
     const changeNumberToStringCap: string = cap.toString();
@@ -28,7 +29,7 @@ const Coins: React.FC<{
     }
 
     return (
-        <Link className={style.coinLink} to={'/Cryptocurrencies/' + name}>
+        <Link className={style.coinLink} to={'/Cryptocurrencies/' + uuid}>
             <div className={style.coin}>
                 <div className={style.coin_firt_block}>
                     <div className={style.coin_name}>{rank}. {name}</div>

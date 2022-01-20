@@ -9,6 +9,6 @@ const element = document.querySelector('#root')
 
 ReactDOM.render(
     <BrowserRouter>
-    <App/>
+        <App />
     </BrowserRouter>,
 element);

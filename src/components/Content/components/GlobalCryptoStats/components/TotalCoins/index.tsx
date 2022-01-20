@@ -9,7 +9,7 @@ export interface CoinStats {
     total24hVolume: number
 }
 
-const TotalCoins: React.FC<{ stats: CoinStats }> = ({ stats }) => {
+const TotalCoins: React.FC<{ stats: CoinStats, loading: boolean }> = ({ stats, loading }) => {
     
     const totalCoins: number = stats.totalCoins;
     const changeNumberToString: string = totalCoins.toString();
@@ -21,7 +21,7 @@ const TotalCoins: React.FC<{ stats: CoinStats }> = ({ stats }) => {
                 Total Cryptocurrencies:
             </p>
             <div className={style.cryptocurrencies_number}>
-                {newTotalCoins}
+                {!loading && newTotalCoins}
             </div>
         </div>
     )

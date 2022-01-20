@@ -4,44 +4,54 @@ import axios from "axios";
 import DOMPurify from "dompurify";
 import style from "./style.module.scss";
 
+interface Details {
+    description: string,
+    name: string,
+    iconUrl: string,
+    uuid: string,
+}
+
+const initialState = {
+    description: '',
+    name: '',
+    iconUrl: '',
+    uuid: '',
+}
+
 const DetailCoinPage = () => {
 
-    const [coins, setCoins] = useState([]);
-    const { name } = useParams();
+    const { uuid } = useParams();
+    const [coins, setCoins] = useState<Details>(initialState);
 
     useEffect(() => {
         const options: any = {
             method: 'GET',
-            url: 'https://coinranking1.p.rapidapi.com/coins',
+            url: 'https://coinranking1.p.rapidapi.com/coin/' + uuid,
+            params: { referenceCurrencyUuid: 'yhjMzLPhuIDl', timePeriod: '24h' },
             headers: {
                 'x-rapidapi-host': 'coinranking1.p.rapidapi.com',
-                'x-rapidapi-key': '2b7b78b59cmsh684721b9cbcd575p1920a3jsn42c6c9c37fce'
+                'x-rapidapi-key': 'ff937e0638msh9d39bafcfa4eccfp1ffc22jsn0f22119b358d'
             }
         };
 
         axios.request(options).then(function (response) {
-            setCoins(response.data.data.coins);
+            setCoins(response.data.data.coin);
         }).catch(function (error) {
             console.error(error);
         });
     }, [])
 
-    const filterCoin = coins.filter(el => el.name === name)
-    const descriptionCoin: string[] = filterCoin.map(item => (item.description));
-    const nameCoin: string = filterCoin.map(item => (item.name)).toString();
-    const iconCoin: string = filterCoin.map(item => (item.iconUrl)).toString();
-    const myHTML: string = descriptionCoin.toString();
-    const mySafeHTML = DOMPurify.sanitize(myHTML)
+    const mySafeHTML = DOMPurify.sanitize(coins.description)
 
     return (
         <div className={style.description}>
             <div className={style.blockIcon}>
-                <h2 className={style.nameCoin}>{nameCoin}</h2>
-                <img src={iconCoin} alt="" />
+                <h2 className={style.nameCoin}>{coins.name}</h2>
+                <img src={coins.iconUrl} alt="" />
             </div>
-            <div 
-            className={style.aboutCoin} 
-            dangerouslySetInnerHTML={{ __html: mySafeHTML }}>
+            <div
+                className={style.aboutCoin}
+                dangerouslySetInnerHTML={{ __html: mySafeHTML }}>
             </div>
         </div>
     )

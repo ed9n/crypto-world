@@ -11,7 +11,7 @@ const Content = () => {
             <Routes>
                 <Route path="/Home" element={<HomePage />} />
                 <Route path="/Cryptocurrencies" element={<CryptocurrenciesPage />}/>
-                <Route path="/Cryptocurrencies/:name" element={<DetailCoinPage/>}/>
+                <Route path="/Cryptocurrencies/:uuid" element={<DetailCoinPage/>}/>
             </Routes>
         </div>
     )

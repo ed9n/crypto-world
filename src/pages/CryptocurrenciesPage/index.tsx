@@ -3,7 +3,8 @@ import axios from "axios";
 import style from "./style.module.scss";
 import Coins from "components/Content/components/CoinTable/components/Coins";
 import * as _ from "lodash";
-import { debounce, filter } from "lodash";
+import Input from 'components/Form/Input';
+
 
 
 const CryptocurrenciesPage = () => {
@@ -11,29 +12,43 @@ const CryptocurrenciesPage = () => {
     const [coins, setCoins] = useState([]);
     const [value, setValue] = useState('');
 
+    
+        useEffect(() => {
+            const options: any = {
+                method: 'GET',
+                url: 'https://coinranking1.p.rapidapi.com/coins',
+                params: {
+                  referenceCurrencyUuid: 'yhjMzLPhuIDl',
+                  timePeriod: '24h',
+                  tiers: '1',
+                  orderBy: 'marketCap',
+                  orderDirection: 'desc',
+                  limit: '50',
+                  offset: '0'
+                },
+                headers: {
+                  'x-rapidapi-host': 'coinranking1.p.rapidapi.com',
+                  'x-rapidapi-key': 'ff937e0638msh9d39bafcfa4eccfp1ffc22jsn0f22119b358d'
+                }
+              };
+            axios.request(options).then(function (response) {
+                setCoins(response.data.data.coins);
+            }).catch(function (error) {
+                console.error(error);
+            });
+
+
+            
+        }, [])
+
     useEffect(() => {
-        const options: any = {
-            method: 'GET',
-            url: 'https://coinranking1.p.rapidapi.com/coins',
-            headers: {
-                'x-rapidapi-host': 'coinranking1.p.rapidapi.com',
-                'x-rapidapi-key': '2b7b78b59cmsh684721b9cbcd575p1920a3jsn42c6c9c37fce'
-            }
-        };
-
-        axios.request(options).then(function (response) {
-            setCoins(response.data.data.coins);
-        }).catch(function (error) {
-            console.error(error);
-        });
-    }, [])
-
+        filterCoins();
+    }, [value])
+    
 
     const onChangeHandler = (event: React.ChangeEvent<HTMLInputElement>) => {
         setValue(event.target.value)
     }
-
-    // const test = _.debounce(filterCoins(), 3000);
 
     function filterCoins() {
         if (value === '') {
@@ -48,17 +63,16 @@ const CryptocurrenciesPage = () => {
                     return false
                 }
             })
-            return coinsFilter 
+            return coinsFilter
         }
     }
 
-    let coin = filterCoins()
-
+    let coin = filterCoins();
 
     return (
         <div className={style.coinTable}>
             <div className={style.block_input}>
-                <input onChange={onChangeHandler} placeholder="Search Cryptocurrencies" />
+                <Input onChange={onChangeHandler}/>
             </div>
 
             <div className={style.coinTable_blocks}>
@@ -72,6 +86,7 @@ const CryptocurrenciesPage = () => {
                         dailyChange={item.change}
                         icon={item.iconUrl}
                         rank={item.rank}
+                        uuid={item.uuid}
                     />
                 ))}
             </div>
