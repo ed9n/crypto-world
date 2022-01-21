@@ -3,21 +3,19 @@ import News from "./components/News";
 import axios from "axios";
 import style from "./style.module.scss";
 
-interface image {
-
-}
-
 const CoinNews = () => {
 
     const [news, setNews] = useState([]);
-    const [test, setTest] = useState();
-
 
     useEffect(() => {
         const options: any = {
             method: 'GET',
             url: 'https://bing-news-search1.p.rapidapi.com/news/search',
-            params: { q: 'cryptocurrency', originalImg: 'true' },
+            params: {
+                q: 'cryptocurrency',
+                count: '15',
+                originalImg: 'true',
+            },
             headers: {
                 'x-bingapis-sdk': 'true',
                 'x-rapidapi-host': 'bing-news-search1.p.rapidapi.com',
@@ -27,7 +25,6 @@ const CoinNews = () => {
 
         axios.request(options).then(function (response) {
             setNews(response.data.value);
-            console.log(response.data.value)
         }).catch(function (error) {
             console.error(error);
         });
@@ -38,7 +35,6 @@ const CoinNews = () => {
             <h2 className={style.title_news}>
                 Latest Crypto News
             </h2>
-
             <div className={style.block_news}>
                 {news.map(item => (
                     <News
