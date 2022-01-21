@@ -4,6 +4,7 @@ import _ from 'lodash';
 
 interface Props {
     onChange: (value: any) => void;
+    placeholder: string
 }
 
 class Input extends React.PureComponent<Props> {
@@ -11,7 +12,7 @@ class Input extends React.PureComponent<Props> {
 
     render() {
         return(
-            <input onChange={this.debounceChange} />
+            <input onChange={this.debounceChange} placeholder={this.props.placeholder} />
         )
     }
 }

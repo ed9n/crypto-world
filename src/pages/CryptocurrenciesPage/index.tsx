@@ -72,7 +72,7 @@ const CryptocurrenciesPage = () => {
     return (
         <div className={style.coinTable}>
             <div className={style.block_input}>
-                <Input onChange={onChangeHandler}/>
+                <Input onChange={onChangeHandler} placeholder={'Search Cryptocurrency'}/>
             </div>
 
             <div className={style.coinTable_blocks}>

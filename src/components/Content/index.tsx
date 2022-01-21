@@ -4,6 +4,7 @@ import HomePage from "../../pages/HomePage";
 import CryptocurrenciesPage from "../../pages/CryptoCurrenciesPage";
 import { Route, Routes } from "react-router-dom";
 import DetailCoinPage from "../../pages/DetailCoinPage";
+import NewsPage from "../../pages/NewsPage";
 
 const Content = () => {
     return (
@@ -12,6 +13,8 @@ const Content = () => {
                 <Route path="/Home" element={<HomePage />} />
                 <Route path="/Cryptocurrencies" element={<CryptocurrenciesPage />}/>
                 <Route path="/Cryptocurrencies/:uuid" element={<DetailCoinPage/>}/>
+                <Route path="/News" element={<NewsPage/>}/>
+
             </Routes>
         </div>
     )
