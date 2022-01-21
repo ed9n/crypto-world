@@ -1,8 +1,8 @@
 import React from "react";
+import { Route, Routes } from "react-router-dom";
 import style from "./style.module.scss";
 import HomePage from "../../pages/HomePage";
-import CryptocurrenciesPage from "../../pages/CryptoCurrenciesPage";
-import { Route, Routes } from "react-router-dom";
+import CryptoCurrenciesPage from "../../pages/CryptoCurrenciesPage";
 import DetailCoinPage from "../../pages/DetailCoinPage";
 import NewsPage from "../../pages/NewsPage";
 
@@ -11,7 +11,7 @@ const Content = () => {
         <div className={style.content}>
             <Routes>
                 <Route path="/Home" element={<HomePage />} />
-                <Route path="/Cryptocurrencies" element={<CryptocurrenciesPage />}/>
+                <Route path="/Cryptocurrencies" element={<CryptoCurrenciesPage />}/>
                 <Route path="/Cryptocurrencies/:uuid" element={<DetailCoinPage/>}/>
                 <Route path="/News" element={<NewsPage/>}/>
 
