@@ -1,10 +1,9 @@
-import React, { createContext, useEffect, useRef, useState } from "react";
+import React, {useEffect, useState } from "react";
 import axios from "axios";
 import style from "./style.module.scss";
 import Coins from "components/Content/components/CoinTable/components/Coins";
 import * as _ from "lodash";
 import Input from 'components/Form/Input';
-
 
 
 const CryptoCurrencies = () => {
@@ -69,8 +68,12 @@ const CryptoCurrencies = () => {
 
     let coin = filterCoins();
 
+    
+
     return (
+        
         <div className={style.coinTable}>
+            
             <div className={style.block_input}>
                 <Input onChange={onChangeHandler} placeholder={'Search Cryptocurrency'}/>
             </div>
@@ -79,7 +82,7 @@ const CryptoCurrencies = () => {
                 {coin.map(item => (
                     <Coins
                         id={item.id}
-                        key={item.id}
+                        key={item.uuid}
                         name={item.name}
                         price={item.price}
                         marketCap={item.marketCap}

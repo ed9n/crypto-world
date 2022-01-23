@@ -25,7 +25,7 @@ const CoinTable = () => {
                 {coins.map(item => (
                     <Coins
                         id={item.id}
-                        key={item.id}
+                        key={item.uuid}
                         name={item.name}
                         price={item.price}
                         marketCap={item.marketCap}

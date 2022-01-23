@@ -3,8 +3,8 @@ import style from "./style.module.scss";
 import _ from 'lodash';
 
 interface Props {
-    onChange: (value: any) => void;
-    placeholder: string
+    onChange?: (value: any) => void;
+    placeholder?: string
 }
 
 class Input extends React.PureComponent<Props> {

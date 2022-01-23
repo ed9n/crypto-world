@@ -3,6 +3,8 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import DOMPurify from "dompurify";
 import style from "./style.module.scss";
+import Ohlc from "./components/Ohlc"
+
 
 interface Details {
     description: string,
@@ -45,10 +47,12 @@ const DetailCoin = () => {
 
     return (
         <div className={style.description}>
+            
             <div className={style.blockIcon}>
                 <h2 className={style.nameCoin}>{coins.name}</h2>
                 <img src={coins.iconUrl} alt="" />
             </div>
+            <Ohlc/>
             <div
                 className={style.aboutCoin}
                 dangerouslySetInnerHTML={{ __html: mySafeHTML }}>
