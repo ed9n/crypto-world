@@ -1,6 +1,5 @@
 import React from "react";
-import CoinNews from "components/Content/components/News";
-
+import CoinNews from "components/Content/components/WorldNews";
 
 const NewsPage = () => {
     return(

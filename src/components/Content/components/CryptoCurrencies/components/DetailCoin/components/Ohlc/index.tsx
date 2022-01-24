@@ -65,7 +65,7 @@ const Ohlc = () => {
         const options: any = {
             method: 'GET',
             url: `https://coinranking1.p.rapidapi.com/coin/${uuid}/ohlc`,
-            params: { referenceCurrencyUuid: 'yhjMzLPhuIDl', interval: 'month', limit: '5' },
+            params: { referenceCurrencyUuid: 'yhjMzLPhuIDl', interval: 'hour', limit: '24' },
             headers: {
                 'x-rapidapi-host': 'coinranking1.p.rapidapi.com',
                 'x-rapidapi-key': 'ff937e0638msh9d39bafcfa4eccfp1ffc22jsn0f22119b358d'
@@ -80,8 +80,14 @@ const Ohlc = () => {
 
     }, [])
 
+    const unixTime = ohlc.map(item => (item.startingAt));
+    const dateTime = unixTime.reverse().map(function (item) {
+        const date = new Date(item * 1000).toLocaleString()
+        return date
+    })
+
     const data = {
-        labels: ['September', 'October', 'November', 'December', 'January'],
+        labels: dateTime,
         datasets: [
             {
                 label: "High",
@@ -111,7 +117,7 @@ const Ohlc = () => {
     return (
         <div className={style.block_convas}>
             <h3 className={style.title_convas}>
-                Statistics for 5 months
+                Statistics for last 24 hours
             </h3>
             <Line
                 data={data}

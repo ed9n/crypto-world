@@ -8,7 +8,6 @@ import Input from "components/Form/Input";
 const CoinNews = () => {
 
     const [news, setNews] = useState([]);
-    const [test, setTest] = useState();
     const [value, setValue] = useState('');
 
     useEffect(() => {
@@ -16,13 +15,13 @@ const CoinNews = () => {
             method: 'GET',
             url: 'https://bing-news-search1.p.rapidapi.com/news/search',
             params: {
-                count: 10,
                 q: value,
-                textDecorations: 'true',
+                count: '16',
                 sortBy: 'Date',
                 mkt: 'en-Us',
                 freshness: 'Week',
                 originalImg: 'true',
+                offset: '0',
                 textFormat: 'Raw',
                 safeSearch: 'Off'
             },
@@ -45,8 +44,9 @@ const CoinNews = () => {
     }
     return (
         <div className={style.news}>
-             <h2 className={style.title_news}>
-             Breaking news for the this week
+            
+            <h2 className={style.title_news}>
+                Breaking news for the this week
             </h2>
             <div className={style.block_input}>
                 <Input onChange={onChangeHandler} placeholder={'Search News'} />

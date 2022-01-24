@@ -1,23 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import style from "./style.module.scss";
 import newsImg from "./img/newsImg.png"
 
 interface Image {
     url?: string,
     contentUrl?: string
-
-
-
 }
-
-interface DetailImage {
-    _type?: string,
-    contentUrl?: string,
-    width?: number,
-    height?: number,
-}
-
-
 
 const News: React.FC<{
     name: string,
@@ -26,8 +14,6 @@ const News: React.FC<{
     url: string,
     datePublished: string
 }> = ({ name, image, url, datePublished }) => {
-    
-   console.log(image)
 
     return (
         <a href={url} className={style.news}>
@@ -35,8 +21,7 @@ const News: React.FC<{
                 <div className={style.block_img}>
                     {image != undefined
                     ? <img src={image.contentUrl} alt=""  /> 
-                    : <img src={newsImg} alt=""  /> } 
-                    
+                    : <img src={newsImg} alt=""  /> }       
                 </div>
                 <div className={style.block_title_news}>
                     <p className={style.title_news}>
@@ -53,6 +38,5 @@ const News: React.FC<{
         </a>
     )
 }
-
 
 export default News;
