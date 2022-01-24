@@ -28,7 +28,6 @@ const Exchanges = () => {
 
         axios.request(options).then(function (response) {
             setExchanges(response.data.data.exchanges)
-            console.log(response.data.data.exchanges);
         }).catch(function (error) {
             console.error(error);
         });

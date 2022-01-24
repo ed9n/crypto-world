@@ -1,7 +1,6 @@
 import DOMPurify from "dompurify";
 import React, { useState } from "react";
 import style from "./style.module.scss";
-import CSS from 'csstype'
 
 const Description: React.FC<{
     description: string,
@@ -22,7 +21,6 @@ const Description: React.FC<{
             return close
         }
     }
-    console.log(hide)
 
     return (
         <div className={style.block_description}>

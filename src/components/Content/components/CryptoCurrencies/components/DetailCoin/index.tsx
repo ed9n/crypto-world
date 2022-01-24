@@ -1,11 +1,11 @@
 import { useParams } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import DOMPurify from "dompurify";
 import style from "./style.module.scss";
 import Ohlc from "./components/Ohlc";
 import Exchanges from "./components/Exchanges";
 import Description from "./components/Description"
+import ProjectLinks from "./components/ProjectLinks"
 
 
 interface Details {
@@ -40,7 +40,6 @@ const DetailCoin = () => {
 
         axios.request(options).then(function (response) {
             setCoins(response.data.data.coin);
-            console.log(response.data.data)
         }).catch(function (error) {
             console.error(error);
         });
@@ -52,12 +51,17 @@ const DetailCoin = () => {
                 <h2 className={style.nameCoin}>{coins.name}</h2>
                 <img src={coins.iconUrl} alt="" />
             </div>
-            <Ohlc />
-            <Exchanges />
-            <Description 
-            description={coins.description}
-            name={coins.name}
-            />
+            <div>
+                <Ohlc />
+                <Exchanges />
+                <Description
+                    description={coins.description}
+                    name={coins.name}
+                />
+                <ProjectLinks />
+            </div>
+
+
         </div>
     )
 }
