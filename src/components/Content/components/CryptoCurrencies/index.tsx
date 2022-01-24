@@ -38,16 +38,16 @@ const CryptoCurrencies = () => {
 
 
             
-        }, [])
+        }, []);
 
     useEffect(() => {
         filterCoins();
-    }, [value])
+    }, [value]);
     
 
     const onChangeHandler = (event: React.ChangeEvent<HTMLInputElement>) => {
         setValue(event.target.value)
-    }
+    };
 
     function filterCoins() {
         if (value === '') {
@@ -64,7 +64,7 @@ const CryptoCurrencies = () => {
             })
             return coinsFilter
         }
-    }
+    };
 
     let coin = filterCoins();
 

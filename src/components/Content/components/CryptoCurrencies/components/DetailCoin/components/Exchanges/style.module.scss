@@ -1,0 +1,13 @@
+.block_exchanges{
+
+    .exchanges_table{
+        width: 100%;
+        .exchanges_table_thead{
+
+            .exchanges_table_thead_tr{
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+}
