@@ -1,7 +1,7 @@
-import React from "react";
+import React, { memo } from "react";
 import { Link } from "react-router-dom";
-import logo from "./img/logo.png"
-import style from "./style.module.scss"
+import logo from "./img/logo.png";
+import style from "./style.module.scss";
 
 const Logo = () => {
     return (
@@ -13,4 +13,4 @@ const Logo = () => {
     )
 }
 
-export default Logo;
+export default  memo(Logo);

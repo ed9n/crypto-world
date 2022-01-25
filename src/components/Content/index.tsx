@@ -15,7 +15,6 @@ const Content = () => {
                 <Route path="/Home" element={<HomePage />} />
                 <Route path="/Cryptocurrencies" element={<CryptoCurrenciesPage />} />
                 <Route path="/Cryptocurrencies/:uuid" element={<DetailCoinPage />} />
-                {/* <Route path="/Cryptocurrencies/:uuid/:uuid" element={<ExchangesPage />} /> */}
                 <Route path="/Exchanges/:uuid" element={<ExchangesPage />} />
                 <Route path="/News" element={<NewsPage />} />
             </Routes>

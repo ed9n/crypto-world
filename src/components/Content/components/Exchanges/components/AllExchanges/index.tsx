@@ -1,17 +1,18 @@
-import React, { useEffect, useState } from "react";
+import React, { memo, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import axios from "axios";
 import style from "./style.module.scss";
 import ExchangesItem from "../ExchangesItem";
+import { getFiftyExchanges, getCoin} from "requests/coins";
 
 interface Coin {
     name: string,
     iconUrl: string
-}
+};
+
 const initialState = {
     name: '',
     iconUrl: ''
-}
+};
 
 const AllExchanges = () => {
 
@@ -20,46 +21,16 @@ const AllExchanges = () => {
     const { uuid } = useParams();
 
     useEffect(() => {
-        const options: any = {
-            method: 'GET',
-            url: `https://coinranking1.p.rapidapi.com/coin/${uuid}/exchanges`,
-            params: {
-                referenceCurrencyUuid: 'yhjMzLPhuIDl',
-                limit: '50',
-                offset: '0',
-                orderBy: '24hVolume',
-                orderDirection: 'desc'
-            },
-            headers: {
-                'x-rapidapi-host': 'coinranking1.p.rapidapi.com',
-                'x-rapidapi-key': 'ff937e0638msh9d39bafcfa4eccfp1ffc22jsn0f22119b358d'
-            }
-        };
-
-        axios.request(options).then(function (response) {
-            setExchangesAll(response.data.data.exchanges)
-        }).catch(function (error) {
-            console.error(error);
-        });
-    }, [])
+        getFiftyExchanges(uuid).then((coins: any) => {
+            setExchangesAll(coins)
+        })
+    }, []);
 
     useEffect(() => {
-        const options: any = {
-            method: 'GET',
-            url: `https://coinranking1.p.rapidapi.com/coin/${uuid}`,
-            params: { referenceCurrencyUuid: 'yhjMzLPhuIDl', timePeriod: '24h' },
-            headers: {
-                'x-rapidapi-host': 'coinranking1.p.rapidapi.com',
-                'x-rapidapi-key': 'ff937e0638msh9d39bafcfa4eccfp1ffc22jsn0f22119b358d'
-            }
-        };
-
-        axios.request(options).then(function (response) {
-            setCoin(response.data.data.coin);
-        }).catch(function (error) {
-            console.error(error);
-        });
-    })
+        getCoin(uuid).then((coins: any) => {
+            setCoin(coins)
+        })
+    }, []);
 
 
     return (
@@ -85,6 +56,7 @@ const AllExchanges = () => {
                         rank={item.rank}
                         volume={item['24hVolume']}
                         price={item.price}
+                        coinrankingUrl={item.coinrankingUrl}
                     />
                 ))}
             </table>
@@ -92,4 +64,4 @@ const AllExchanges = () => {
     )
 }
 
-export default AllExchanges;
+export default memo(AllExchanges);

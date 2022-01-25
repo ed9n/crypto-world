@@ -25,7 +25,6 @@
         overflow: hidden;
         position: relative;
         font-family: Open Sans;
-        
 
       &::after {
         content: "";
@@ -51,6 +50,7 @@
             background-color: #ffffff;
             opacity: 0;
         }
+
         .button_open{
             font-family: Open Sans;
             color: #002c94;
@@ -63,12 +63,7 @@
             font-weight: 500;
             cursor: pointer;
         }
-
     }
-        
-
-
-    
 }
 
 

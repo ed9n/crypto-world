@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import style from "./style.module.scss";
 import Website from "./image/Website.svg";
 import Reddit from "./image/Reddit.svg";
@@ -13,12 +13,12 @@ import Instagram from "./image/Instagram.svg";
 import Discord from "./image/Discord.svg";
 import Medium from "./image/Medium.svg";
 import SinaWeibo from "./image/SinaWeibo.svg";
-import Vkontakte from "./image/Vkontakte.svg"
-import LinkedIn from "./image/LinkedIn.svg"
+import Vkontakte from "./image/Vkontakte.svg";
+import LinkedIn from "./image/LinkedIn.svg";
 
 type MapperType = {
     [key: string]: string
-}
+};
 
 const LinkItem: React.FC<{
     name: string,
@@ -43,11 +43,10 @@ const LinkItem: React.FC<{
         'sina-weibo': SinaWeibo,
         'vkontakte': Vkontakte,
         'linkedin': LinkedIn
-    }
+    };
 
     return (
         <tbody>
-
             <tr className={style.linkItem_link_tr}>
 
                 <td className={style.linkItem_link_td_block_img}>
@@ -65,12 +64,9 @@ const LinkItem: React.FC<{
                         {name}
                     </a>
                 </td>
-
             </tr>
-
-
         </tbody>
     )
 }
 
-export default LinkItem;
+export default memo(LinkItem);

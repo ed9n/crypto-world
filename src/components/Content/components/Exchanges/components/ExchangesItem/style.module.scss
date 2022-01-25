@@ -1,4 +1,5 @@
 .block_exchangesItem {
+
     .exchangesItem_tr {
         display: flex;
         justify-content: space-between;
@@ -17,11 +18,12 @@
                     margin-right: 14px;
                 }
 
-                a{
+                a {
                     cursor: pointer;
                     color: #000;
+                    text-decoration: none;
 
-                    &:hover{
+                    &:hover {
                         color: rgba(209, 209, 209, 0.74);
                     }
                 }
@@ -42,6 +44,7 @@
             display: flex;
             flex-flow: column;
             align-items: center;
+            
             .exchangesItem_tr_td_24hVolume {
                 font-size: 10px;
                 font-family: Open Sans;
@@ -53,8 +56,4 @@
             }
         }
     }
-}
-
-.img {
-    width: 50px;
 }

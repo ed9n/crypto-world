@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
+import React, { memo, useEffect, useState } from "react";
 import TotalCoins from "./components/TotalCoins";
 import Total24hVolume from "./components/Total24hVolume";
 import TotalExchanges from "./components/TotalExchanges";
@@ -7,6 +6,7 @@ import TotalMarketCap from "./components/TotalMarketCap";
 import TotalMarkets from "./components/TotalMarkets";
 import { CoinStats } from "./components/TotalCoins";
 import style from "./style.module.scss";
+import { getStats } from "requests/coins";
 
 const initialState = {
     totalCoins: 0,
@@ -14,7 +14,7 @@ const initialState = {
     totalExchanges: 0,
     totalMarketCap: 0,
     total24hVolume: 0,
-}
+};
 
 const GlobalCryptoStats = () => {
 
@@ -23,21 +23,8 @@ const GlobalCryptoStats = () => {
 
     useEffect(() => {
         setLoading(true);
-        const options: any = {
-            method: 'GET',
-            url: 'https://coinranking1.p.rapidapi.com/stats',
-            params: {referenceCurrencyUuid: 'yhjMzLPhuIDl'},
-            headers: {
-              'x-rapidapi-host': 'coinranking1.p.rapidapi.com',
-              'x-rapidapi-key': 'ff937e0638msh9d39bafcfa4eccfp1ffc22jsn0f22119b358d'
-            }
-          };
-        axios.request(options).then(function (response) {
-
-            setCoinStat(response.data.data)
-        }).catch(function (error) {
-            console.error(error);
-
+        getStats().then((coins: any)=>{
+            setCoinStat(coins)
         }).finally(()=>{
             setLoading(false)
         })
@@ -58,4 +45,4 @@ const GlobalCryptoStats = () => {
     )
 }
 
-export default GlobalCryptoStats;
+export default memo(GlobalCryptoStats);

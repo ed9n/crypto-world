@@ -10,6 +10,8 @@
       "allowSyntheticDefaultImports": true,
       "paths": {
         "components/*": ["./src/components/*"],
+        "requests/*": ["./src/requests/*"],
+        "keys/*": ["./src/keys/*"],
       }
     }
   }

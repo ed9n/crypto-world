@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import style from "./style.module.scss";
 
 export interface CoinStats {
@@ -27,4 +27,4 @@ const TotalCoins: React.FC<{ stats: CoinStats, loading: boolean }> = ({ stats, l
     )
 }
 
-export default TotalCoins;
+export default memo(TotalCoins);

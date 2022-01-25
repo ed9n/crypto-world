@@ -1,5 +1,5 @@
 import DOMPurify from "dompurify";
-import React, { useState } from "react";
+import React, { memo, useState } from "react";
 import style from "./style.module.scss";
 
 const Description: React.FC<{
@@ -7,10 +7,10 @@ const Description: React.FC<{
     name: string,
 
 }> = ({ description, name }) => {
-    const [change, setChange] = useState(true);
+
     const [hide, setHide] = useState(false);
 
-    const mySafeHTML = DOMPurify.sanitize(description)
+    const mySafeHTML = DOMPurify.sanitize(description);
 
     const hideText: any = function () {
         let open = style.open;
@@ -20,7 +20,7 @@ const Description: React.FC<{
         } else {
             return close
         }
-    }
+    };
 
     return (
         <div className={style.block_description}>
@@ -32,15 +32,13 @@ const Description: React.FC<{
             <div className={style.block_button}>
                 <button
                     onClick={() => hide ? setHide(false) : setHide(true)}
-                    className={ hide ? style.button_close: style.button_open}
-                    >
+                    className={hide ? style.button_close : style.button_open}
+                >
                     {hide ? <p></p> : <p>Read more</p>}
                 </button>
             </div>
-
         </div>
-
     )
 }
 
-export default Description;
+export default memo(Description);

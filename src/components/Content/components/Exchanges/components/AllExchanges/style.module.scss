@@ -1,5 +1,7 @@
 .block_allExchanges {
     margin-top: 35px;
+    width: 900px;
+
     .block_allExchanges_block_nameAndImg {
         display: flex;
         align-items: center;
@@ -24,7 +26,9 @@
     .exchanges_table {
         margin-top: 20px;
         width: 100%;
+
         .exchanges_table_thead {
+            
             .exchanges_table_thead_tr {
                 display: flex;
                 justify-content: space-between;

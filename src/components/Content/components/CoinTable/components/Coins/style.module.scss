@@ -1,77 +1,74 @@
-.coinLink{
+.coinLink {
     text-decoration: none;
     color: rgb(0, 0, 0);
 
-    .coin{
+    .coin {
         margin: 0 20px 20px 20px;
         padding: 16px;
         background-color: #8080801f;
         border-radius: 5px;
-        box-shadow: 0 0 4px rgba(0,0,0,0.5);
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
         width: 200px;
 
-        &:hover{
-            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        &:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
             transition: all 0.5s linear;
         }
-        
-        .coin_firt_block{
+
+        .coin_firt_block {
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin-bottom: 30px;
-            font-weight: bold; 
-            
-            img{
+            font-weight: bold;
+
+            img {
                 width: 30px;
             }
-        
-            .coin_name{
+
+            .coin_name {
                 font-family: Open Sans;
                 font-size: 12px;
             }
         }
-    
-        .coin_second_block{
+
+        .coin_second_block {
             font-family: Open Sans;
-    
-            .price{
+
+            .price {
                 display: flex;
-                
-                .price_text{
+
+                .price_text {
                     margin: 0 5px 15px 0;
                     font-size: 12px;
-    
                 }
-                .price_number{
+                .price_number {
                     font-size: 12px;
                     font-weight: 600;
                 }
             }
-            
-            .market{
+
+            .market {
                 display: flex;
-                
-                .market_text{
+
+                .market_text {
                     margin: 0 5px 15px 0;
                     font-size: 12px;
-    
                 }
-                .market_number{
+                .market_number {
                     font-size: 12px;
                     font-weight: 600;
                 }
             }
-    
-            .daily{
+
+            .daily {
                 display: flex;
-                
-                .daily_text{
+
+                .daily_text {
                     margin: 0 5px 15px 0;
                     font-size: 12px;
-    
                 }
-                .daily_number{
+                .daily_number {
                     font-size: 12px;
                     font-weight: 600;
                 }

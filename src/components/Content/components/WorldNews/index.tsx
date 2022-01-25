@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { memo, useEffect, useState } from "react";
 import News from "./components/News";
-import axios from "axios";
 import style from "./style.module.scss";
 import Input from "components/Form/Input";
-
+import { getNews } from "requests/coins";
 
 const CoinNews = () => {
 
@@ -11,40 +10,17 @@ const CoinNews = () => {
     const [value, setValue] = useState('');
 
     useEffect(() => {
-        const options: any = {
-            method: 'GET',
-            url: 'https://bing-news-search1.p.rapidapi.com/news/search',
-            params: {
-                q: value,
-                count: '16',
-                sortBy: 'Date',
-                mkt: 'en-Us',
-                freshness: 'Week',
-                originalImg: 'true',
-                offset: '0',
-                textFormat: 'Raw',
-                safeSearch: 'Off'
-            },
-            headers: {
-                'x-bingapis-sdk': 'true',
-                'x-rapidapi-host': 'bing-news-search1.p.rapidapi.com',
-                'x-rapidapi-key': 'c191e09a3emshd920759bae088b2p1d41b5jsn4e206719d852'
-            }
-        };
-
-        axios.request(options).then(function (response) {
-            setNews(response.data.value);
-        }).catch(function (error) {
-            console.error(error);
-        });
-    }, [value])
+        getNews(value).then((coins: any) => {
+            setNews(coins)
+        })
+    }, [value]);
 
     const onChangeHandler = (event: React.ChangeEvent<HTMLInputElement>) => {
         setValue(event.target.value)
-    }
+    };
+
     return (
         <div className={style.news}>
-            
             <h2 className={style.title_news}>
                 Breaking news for the this week
             </h2>
@@ -67,5 +43,4 @@ const CoinNews = () => {
     )
 }
 
-
-export default CoinNews;
+export default memo(CoinNews);

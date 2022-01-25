@@ -1,11 +1,11 @@
-import React from "react";
+import React, { memo } from "react";
 import style from "./style.module.scss";
-import newsImg from "./img/newsImg.png"
+import newsImg from "./img/newsImg.png";
 
 interface Image {
     url?: string,
     contentUrl?: string
-}
+};
 
 const News: React.FC<{
     name: string,
@@ -32,11 +32,10 @@ const News: React.FC<{
                             {datePublished.slice(0, 10)}
                         </p>
                     </div>
-
                 </div>
             </div>
         </a>
     )
 }
 
-export default News;
+export default memo(News);

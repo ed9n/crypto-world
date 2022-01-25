@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
+import React, { memo, useEffect, useState } from "react";
 import ExchangesItem from "../ExchangesItem";
 import style from "./style.module.scss";
 import { Link, useParams } from "react-router-dom";
+import { getFiveExchanges } from "requests/coins";
 
 const TopFiveExchanges = () => {
 
@@ -10,28 +10,10 @@ const TopFiveExchanges = () => {
     const { uuid } = useParams();
 
     useEffect(() => {
-        const options: any = {
-            method: 'GET',
-            url: `https://coinranking1.p.rapidapi.com/coin/${uuid}/exchanges`,
-            params: {
-                referenceCurrencyUuid: 'yhjMzLPhuIDl',
-                limit: '5',
-                offset: '0',
-                orderBy: '24hVolume',
-                orderDirection: 'desc'
-            },
-            headers: {
-                'x-rapidapi-host': 'coinranking1.p.rapidapi.com',
-                'x-rapidapi-key': 'ff937e0638msh9d39bafcfa4eccfp1ffc22jsn0f22119b358d'
-            }
-        };
-
-        axios.request(options).then(function (response) {
-            setExchanges(response.data.data.exchanges)
-        }).catch(function (error) {
-            console.error(error);
-        });
-    }, [])
+        getFiveExchanges(uuid).then((coins: any) => {
+            setExchanges(coins)
+        })
+    }, []);
 
     return (
         <div className={style.block_exchanges}>
@@ -56,6 +38,7 @@ const TopFiveExchanges = () => {
                         rank={item.rank}
                         volume={item['24hVolume']}
                         price={item.price}
+                        coinrankingUrl={item.coinrankingUrl}
                     />
                 ))}
             </table>
@@ -66,10 +49,8 @@ const TopFiveExchanges = () => {
                     Show more
                 </Link>
             </div>
-
-
         </div>
     )
 }
 
-export default TopFiveExchanges;
+export default memo(TopFiveExchanges);

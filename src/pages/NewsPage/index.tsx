@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import CoinNews from "components/Content/components/WorldNews";
 
 const NewsPage = () => {
@@ -9,4 +9,4 @@ const NewsPage = () => {
     )
 }
 
-export default NewsPage;
+export default memo(NewsPage);

@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
+import React, { memo, useEffect } from "react";
 import style from "./style.module.scss";
 
 const ExchangesItem: React.FC<{
@@ -9,9 +8,9 @@ const ExchangesItem: React.FC<{
     rank: number,
     volume: string,
     price: string,
+    coinrankingUrl: string,
 
-}> = ({ uuid, name, iconUrl, rank, volume, price }) => {
-
+}> = ({ name, iconUrl, rank, volume, price, coinrankingUrl }) => {
 
     const total24hVolume: string = volume;
     const roundNumber: number = Math.round(+total24hVolume * 10) / 10;
@@ -29,17 +28,14 @@ const ExchangesItem: React.FC<{
 
     useEffect(() => {
         addsLetterToTheEnd()
-    }, [volume])
+    }, [volume]);
 
     const newTotal24hVolume = addsLetterToTheEnd();
-
-
 
     const value: string = price;
     const newPrice: string = `$${Math.round(+value).toString()}`;
 
     return (
-
         <tbody className={style.block_exchangesItem}>
             <tr className={style.exchangesItem_tr}>
                 <th className={style.exchangesItem_tr_th}>
@@ -47,21 +43,17 @@ const ExchangesItem: React.FC<{
                         <div className={style.exchangesItem_tr_th_items_rank}>
                             {rank}
                         </div>
-                        <Link to=''>
+                        <a href={coinrankingUrl}>
                             <img
                                 className={style.exchangesItem_tr_th_items_block_image_img}
                                 src={iconUrl}
                             />
-                        </Link>
-
-                        <Link
-                            to=''
+                        </a>
+                        <a
+                            href={coinrankingUrl}
                             className={style.exchangesItem_tr_th_items_block_name_text}>
                             {name}
-                        </Link>
-
-
-
+                        </a>
                     </div>
                 </th>
                 <td className={style.exchangesItem_tr_td}>
@@ -74,8 +66,7 @@ const ExchangesItem: React.FC<{
                 </td>
             </tr>
         </tbody>
-
     )
 }
 
-export default ExchangesItem;
+export default memo(ExchangesItem);

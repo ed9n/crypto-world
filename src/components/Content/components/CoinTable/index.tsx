@@ -1,9 +1,8 @@
 import React, { memo, useEffect, useState } from "react";
-import axios from "axios";
 import style from "./style.module.scss";
 import Coins from "./components/Coins";
 import { Link } from "react-router-dom";
-import { getCoins } from "../../../../requests/coins";
+import { getCoins } from "requests/coins";
 
 const CoinTable = () => {
 
@@ -13,7 +12,7 @@ const CoinTable = () => {
         getCoins().then((coins: any)=>{
             setCoins(coins)
         }) 
-    }, [])
+    }, []);
 
     return (
         <div className={style.coinTable}>
@@ -40,4 +39,4 @@ const CoinTable = () => {
     )
 }
 
-export default memo(CoinTable) 
+export default memo(CoinTable) ;

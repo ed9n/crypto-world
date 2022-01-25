@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { Link } from "react-router-dom";
 import style from "./style.module.scss";
 
@@ -11,7 +11,7 @@ const Coins: React.FC<{
     icon: string,
     rank: number,
     uuid: string,
- }> = ({ id, name, price, marketCap, dailyChange, icon, rank, uuid }) => {
+ }> = ({ name, price, marketCap, dailyChange, icon, rank, uuid }) => {
 
     const cap = marketCap;
     const changeNumberToStringCap: string = cap.toString();
@@ -54,4 +54,4 @@ const Coins: React.FC<{
     )
 }
 
-export default Coins;
+export default memo(Coins);

@@ -1,6 +1,6 @@
-import React from "react";
+import React, { memo } from "react";
 import { NavLinkProps, NavLink } from "react-router-dom";
-import style from "./style.module.scss"
+import style from "./style.module.scss";
 
 const MenuItem = (props: NavLinkProps) => {
 
@@ -17,4 +17,4 @@ const MenuItem = (props: NavLinkProps) => {
     )
 }
 
-export default MenuItem;
+export default memo(MenuItem);

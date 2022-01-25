@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import style from "./style.module.scss";
 
 export interface CoinStats {
@@ -7,7 +7,7 @@ export interface CoinStats {
     totalExchanges: number,
     totalMarketCap: number,
     total24hVolume: number
-}
+};
 
 const Total24hVolume: React.FC<{ stats: CoinStats }> = ({ stats }) => {
     const total24hVolume: number = stats.total24hVolume;
@@ -27,4 +27,4 @@ const Total24hVolume: React.FC<{ stats: CoinStats }> = ({ stats }) => {
     )
 }
 
-export default Total24hVolume;
+export default memo(Total24hVolume);

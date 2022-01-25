@@ -1,6 +1,7 @@
-import React from "react";
+import React, { memo } from "react";
 import CoinTable from "components/Content/components/CoinTable";
 import GlobalCryptoStats from "components/Content/components/GlobalCryptoStats";
+
 const HomePage = () => {
     return(
         <div>
@@ -10,4 +11,4 @@ const HomePage = () => {
     )
 }
 
-export default HomePage
+export default memo(HomePage);

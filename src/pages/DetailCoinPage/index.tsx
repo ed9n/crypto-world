@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import DetailCoin from "components/Content/components/CryptoCurrencies/components/DetailCoin";
 
 const DetailCoinPage= () => {
@@ -9,4 +9,4 @@ const DetailCoinPage= () => {
     )
 }
 
-export default DetailCoinPage;
+export default memo(DetailCoinPage);

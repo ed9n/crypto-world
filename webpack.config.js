@@ -47,7 +47,9 @@ module.exports = {
             images: path.resolve(__dirname, 'src/images'),
             video: path.resolve(__dirname, 'src/video'),
             pages: path.resolve(__dirname, 'src/pages'),
-            redux_main: path.resolve(__dirname, 'src/redux')
+            redux_main: path.resolve(__dirname, 'src/redux'),
+            requests: path.resolve(__dirname, 'src/requests'),
+            keys: path.resolve(__dirname, 'src/keys'),
         }
     }
 }

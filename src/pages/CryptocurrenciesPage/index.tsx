@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import CryptoCurrencies from "components/Content/components/CryptoCurrencies";
 const CryptoCurrenciesPage = () => {
     return(
@@ -8,4 +8,4 @@ const CryptoCurrenciesPage = () => {
     )
 }
 
-export default CryptoCurrenciesPage;
+export default memo(CryptoCurrenciesPage);

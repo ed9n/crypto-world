@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import Exchanges from "components/Content/components/Exchanges";
 
 const ExchangesPage = () => {
@@ -9,4 +9,4 @@ const ExchangesPage = () => {
     )
 }
 
-export default ExchangesPage;
+export default memo(ExchangesPage);
