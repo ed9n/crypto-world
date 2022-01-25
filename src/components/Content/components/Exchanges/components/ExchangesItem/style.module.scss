@@ -17,6 +17,15 @@
                     margin-right: 14px;
                 }
 
+                a{
+                    cursor: pointer;
+                    color: #000;
+
+                    &:hover{
+                        color: rgba(209, 209, 209, 0.74);
+                    }
+                }
+
                 .exchangesItem_tr_th_items_block_image_img {
                     width: 20px;
                     margin-right: 4px;

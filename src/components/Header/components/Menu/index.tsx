@@ -8,7 +8,7 @@ const Menu = () => {
         <div className={style.menu}>
             <MenuItem to="/Home" children="Home" />
             <MenuItem to="/Cryptocurrencies" children="Cryptocurrencies"/>
-            <MenuItem to="/Exchanges" children="Exchanges"/>
+            {/* <MenuItem to="/Exchanges" children="Exchanges"/> */}
             <MenuItem to="/News" children="News"/>
         </div>
 

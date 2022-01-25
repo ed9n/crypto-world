@@ -1,25 +1,28 @@
-.block_exchanges {
-    grid-row-start: 3;
-    grid-row-end: 4;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    justify-content: center;
+.block_allExchanges {
+    margin-top: 35px;
+    .block_allExchanges_block_nameAndImg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
 
-    .block_exchanges_text {
         h2 {
-            font-size: 20px;
+            font-size: 25px;
             font-family: Open Sans;
-            margin-bottom: 10px;
         }
-
-        p {
-            font-size: 12px;
-            font-family: Open Sans;
-            margin-bottom: 15px;
+        img {
+            width: 30px;
+            margin-right: 5px;
         }
     }
-
+    h3 {
+        font-size: 20px;
+        color: rgba(216, 145, 13, 0.924);
+        font-family: Open Sans;
+        text-align: left;
+    }
     .exchanges_table {
+        margin-top: 20px;
         width: 100%;
         .exchanges_table_thead {
             .exchanges_table_thead_tr {

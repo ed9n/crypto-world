@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import ExchangesItem from "./components/ExchangesItem";
+import ExchangesItem from "../ExchangesItem";
 import style from "./style.module.scss";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
-const Exchanges = () => {
+const TopFiveExchanges = () => {
 
     const [exchanges, setExchanges] = useState([]);
     const { uuid } = useParams();
@@ -59,9 +59,17 @@ const Exchanges = () => {
                     />
                 ))}
             </table>
+            <div className={style.block_exchanges_link}>
+                <Link
+                    to={`/Exchanges/${uuid}`}
+                    className={style.exchanges_link}>
+                    Show more
+                </Link>
+            </div>
+
 
         </div>
     )
 }
 
-export default Exchanges;
+export default TopFiveExchanges;

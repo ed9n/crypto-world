@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import style from "./style.module.scss";
 import Ohlc from "./components/Ohlc";
-import Exchanges from "./components/Exchanges";
+import TopFiveExchanges from "../../../Exchanges/components/TopFiveExchanges";
 import Description from "./components/Description"
 import ProjectLinks from "./components/ProjectLinks"
 
@@ -59,7 +59,7 @@ const DetailCoin = () => {
                     name={coins.name}
                 />
                 <ProjectLinks />
-                <Exchanges />
+                <TopFiveExchanges />
 
 
             </div>

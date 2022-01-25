@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import style from "./style.module.scss";
 
 const ExchangesItem: React.FC<{
@@ -14,8 +15,25 @@ const ExchangesItem: React.FC<{
 
     const total24hVolume: string = volume;
     const roundNumber: number = Math.round(+total24hVolume * 10) / 10;
-    const changeNumberToString: string = roundNumber.toString();
-    const newTotal24hVolume: string = '$' + changeNumberToString.slice(0, 1) + "." + changeNumberToString.slice(1, 3) + "B";
+    function addsLetterToTheEnd() {
+        if (roundNumber >= 1000000000) {
+            const changeNumberToString: string = roundNumber.toString();
+            const newTotal24hVolume: string = '$' + changeNumberToString.slice(0, 1) + "." + changeNumberToString.slice(1, 3) + " billion";
+            return newTotal24hVolume
+        } else if (roundNumber < 1000000000) {
+            const changeNumberToString: string = roundNumber.toString();
+            const newTotal24hVolume: string = '$' + changeNumberToString.slice(0, 3) + "." + changeNumberToString.slice(1, 3) + " million";
+            return newTotal24hVolume
+        }
+    }
+
+    useEffect(() => {
+        addsLetterToTheEnd()
+    }, [volume])
+
+    const newTotal24hVolume = addsLetterToTheEnd();
+
+
 
     const value: string = price;
     const newPrice: string = `$${Math.round(+value).toString()}`;
@@ -29,16 +47,20 @@ const ExchangesItem: React.FC<{
                         <div className={style.exchangesItem_tr_th_items_rank}>
                             {rank}
                         </div>
+                        <Link to=''>
+                            <img
+                                className={style.exchangesItem_tr_th_items_block_image_img}
+                                src={iconUrl}
+                            />
+                        </Link>
 
-                        <img
-                            className={style.exchangesItem_tr_th_items_block_image_img}
-                            src={iconUrl}
-                        />
-
-
-                        <p className={style.exchangesItem_tr_th_items_block_name_text}>
+                        <Link
+                            to=''
+                            className={style.exchangesItem_tr_th_items_block_name_text}>
                             {name}
-                        </p>
+                        </Link>
+
+
 
                     </div>
                 </th>
