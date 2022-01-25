@@ -115,13 +115,17 @@ const Ohlc = () => {
     };
 
     return (
-        <div className={style.block_convas}>
+        <div className={style.block_ohlc}>
             <h3 className={style.title_convas}>
                 Statistics for last 24 hours
             </h3>
-            <Line
-                data={data}
-            />
+            <div className={style.block_convas}>
+                <Line
+                    data={data}
+                />
+
+            </div>
+
         </div>
     )
 }

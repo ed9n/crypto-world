@@ -35,14 +35,16 @@ const Exchanges = () => {
 
     return (
         <div className={style.block_exchanges}>
-            <h2>Top Bitcoin exchanges</h2>
-            <p>The top crypto exchanges that have Bitcoin available for trading,
-                ranked by 24h trading volume and the current price.</p>
+            <div className={style.block_exchanges_text}>
+                <h2>Top Bitcoin exchanges</h2>
+                <p>The top crypto exchanges that have Bitcoin available for trading,
+                    ranked by 24h trading volume and the current price.</p>
+            </div>
             <table className={style.exchanges_table}>
                 <thead className={style.exchanges_table_thead}>
                     <tr className={style.exchanges_table_thead_tr}>
-                        <th>EXCHANGE</th>
-                        <th>24H VOLUME</th>
+                        <th className={style.exchanges_table_thead_th_one}>EXCHANGE</th>
+                        <th className={style.exchanges_table_thead_th_two}>24H VOLUME</th>
                     </tr>
                 </thead>
                 {exchanges.map(item => (

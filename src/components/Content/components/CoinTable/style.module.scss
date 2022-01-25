@@ -1,25 +1,26 @@
 .coinTable{
     padding: 16px;
-    align-items: center;
+    
     
     .coinTable_text{
+        display: flex;
+        justify-content:space-around;
+        margin-bottom: 15px;
 
         .coinTable_main_text{
-            margin: 0 250px 20px 0;
+            
             font-size: 25px;
             font-family: Open Sans;
+            
         }
 
         .coinTable_link{
-           max-width: 940px;
-            display: flex;
-            justify-content: right;
             font-size: 17px;
             font-family: Open Sans;
             font-weight: 600;
             text-decoration: none;
             color: #1467ee;
-            margin-bottom: 20px;
+            align-self: flex-end;
         
             &:hover{
                 color: gray ;
@@ -31,6 +32,7 @@
     .coinTable_blocks{
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
     }
     
 }

@@ -4,10 +4,16 @@ import Logo from "./components/Logo";
 import Menu from "./components/Menu";
 
 const Header = () => {
-    return(
+    return (
         <div className={style.header}>
-            <Logo/>
-            <Menu/>
+            <div className={style.block_logo}>
+                <Logo />
+            </div>
+            <div className={style.block_menu}>
+                <Menu />
+            </div>
+
+
         </div>
     )
 }

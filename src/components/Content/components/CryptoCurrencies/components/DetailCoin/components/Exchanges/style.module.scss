@@ -1,12 +1,39 @@
-.block_exchanges{
+.block_exchanges {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-content: center;
 
-    .exchanges_table{
+    .block_exchanges_text {
+        h2 {
+            font-size: 20px;
+            font-family: Open Sans;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 12px;
+            font-family: Open Sans;
+            margin-bottom: 15px;
+        }
+    }
+
+    .exchanges_table {
         width: 100%;
-        .exchanges_table_thead{
-
-            .exchanges_table_thead_tr{
+        .exchanges_table_thead {
+            .exchanges_table_thead_tr {
                 display: flex;
                 justify-content: space-between;
+            }
+            .exchanges_table_thead_th_one {
+                font-size: 11px;
+                font-family: Open Sans;
+            }
+
+            .exchanges_table_thead_th_two {
+                font-size: 11px;
+                font-family: Open Sans;
             }
         }
     }

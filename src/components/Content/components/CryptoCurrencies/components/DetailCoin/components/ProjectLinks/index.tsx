@@ -28,7 +28,7 @@ const ProjectLinks = () => {
     
     }, [])
     return(
-        <div>
+        <div className={style.block_projectLinks}>
             <h2>Project links</h2>
             <table>
                 {links.map(item => (

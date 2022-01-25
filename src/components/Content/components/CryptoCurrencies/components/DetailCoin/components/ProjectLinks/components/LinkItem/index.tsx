@@ -14,6 +14,7 @@ import Discord from "./image/Discord.svg";
 import Medium from "./image/Medium.svg";
 import SinaWeibo from "./image/SinaWeibo.svg";
 import Vkontakte from "./image/Vkontakte.svg"
+import LinkedIn from "./image/LinkedIn.svg"
 
 type MapperType = {
     [key: string]: string
@@ -41,19 +42,32 @@ const LinkItem: React.FC<{
         'medium': Medium,
         'sina-weibo': SinaWeibo,
         'vkontakte': Vkontakte,
+        'linkedin': LinkedIn
     }
 
     return (
         <tbody>
-            <a href={url}>
-                <tr>
-                    <td>
+
+            <tr className={style.linkItem_link_tr}>
+
+                <td className={style.linkItem_link_td_block_img}>
+                    <a className={style.linkItem_link} href={url}>
                         <img src={imagesMapper[type]} />
-                    </td>
-                    <th>{name}</th>
-                    <td>{url}</td>
-                </tr>
-            </a>
+                    </a>
+                </td>
+                <th>
+                    <a className={style.linkItem_link} href={url}>
+                        {type}
+                    </a>
+                </th>
+                <td className={style.linkItem_link_td}>
+                    <a className={style.linkItem_link} href={url}>
+                        {name}
+                    </a>
+                </td>
+
+            </tr>
+
 
         </tbody>
     )

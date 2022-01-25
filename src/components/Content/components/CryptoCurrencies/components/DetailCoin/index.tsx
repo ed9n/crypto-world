@@ -48,17 +48,20 @@ const DetailCoin = () => {
     return (
         <div className={style.description}>
             <div className={style.blockIcon}>
-                <h2 className={style.nameCoin}>{coins.name}</h2>
                 <img src={coins.iconUrl} alt="" />
+                <h2 className={style.nameCoin}>{coins.name}</h2>
+
             </div>
-            <div>
+            <div className={style.block_detailCoin}>
                 <Ohlc />
-                <Exchanges />
                 <Description
                     description={coins.description}
                     name={coins.name}
                 />
                 <ProjectLinks />
+                <Exchanges />
+
+
             </div>
 
 

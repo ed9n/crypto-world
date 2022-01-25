@@ -1,22 +1,51 @@
-.block_exchangesItem{
+.block_exchangesItem {
+    .exchangesItem_tr {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #123468;
+        padding: 12px 0 14px;
 
-        .exchangesItem_tr{
-            display: flex;
-            justify-content: space-between;
-            border-bottom: 1px solid #123468;
-            padding: 12px 0 14px;
+        .exchangesItem_tr_th {
+            .exchangesItem_tr_th_block_items {
+                display: flex;
+                align-items: center;
 
-            .exchangesItem_tr_th{
+                .exchangesItem_tr_th_items_rank {
+                    font-size: 9px;
+                    font-family: Open Sans;
+                    margin-right: 14px;
+                }
 
-                .exchangesItem_tr_th_items{
-                    display: flex;
+                .exchangesItem_tr_th_items_block_image_img {
+                    width: 20px;
+                    margin-right: 4px;
+                }
+
+                .exchangesItem_tr_th_items_block_name_text {
+                    font-size: 13px;
+                    font-family: Open Sans;
                 }
             }
         }
+
+        .exchangesItem_tr_td {
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            .exchangesItem_tr_td_24hVolume {
+                font-size: 10px;
+                font-family: Open Sans;
+            }
+
+            .exchangesItem_tr_td_price {
+                font-size: 10px;
+                font-family: Open Sans;
+            }
+        }
+    }
 }
 
-
-
-.img{
+.img {
     width: 50px;
 }

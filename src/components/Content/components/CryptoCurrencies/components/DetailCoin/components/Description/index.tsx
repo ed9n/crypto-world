@@ -31,8 +31,10 @@ const Description: React.FC<{
             </div>
             <div className={style.block_button}>
                 <button
-                    onClick={() => hide ? setHide(false) : setHide(true)}>
-                    {hide ? <p>Close</p> : <p>Read more</p>}
+                    onClick={() => hide ? setHide(false) : setHide(true)}
+                    className={ hide ? style.button_close: style.button_open}
+                    >
+                    {hide ? <p></p> : <p>Read more</p>}
                 </button>
             </div>
 

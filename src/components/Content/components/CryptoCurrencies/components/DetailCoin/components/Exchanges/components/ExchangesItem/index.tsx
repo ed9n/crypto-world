@@ -25,19 +25,30 @@ const ExchangesItem: React.FC<{
         <tbody className={style.block_exchangesItem}>
             <tr className={style.exchangesItem_tr}>
                 <th className={style.exchangesItem_tr_th}>
-                    <div className={style.exchangesItem_tr_th_items}>
-                        <div>{rank}</div>
-                        <div>
-                            <img className={style.img} src={iconUrl} />
+                    <div className={style.exchangesItem_tr_th_block_items}>
+                        <div className={style.exchangesItem_tr_th_items_rank}>
+                            {rank}
                         </div>
-                        <div>
-                            <p>{name}</p>
-                        </div>
+
+                        <img
+                            className={style.exchangesItem_tr_th_items_block_image_img}
+                            src={iconUrl}
+                        />
+
+
+                        <p className={style.exchangesItem_tr_th_items_block_name_text}>
+                            {name}
+                        </p>
+
                     </div>
                 </th>
-                <td>
-                    <div>{newTotal24hVolume}</div>
-                    <div>{newPrice}</div>
+                <td className={style.exchangesItem_tr_td}>
+                    <div className={style.exchangesItem_tr_td_24hVolume}>
+                        {newTotal24hVolume}
+                    </div>
+                    <div className={style.exchangesItem_tr_td_price}>
+                        {newPrice}
+                    </div>
                 </td>
             </tr>
         </tbody>
