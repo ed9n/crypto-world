@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { Route, Routes, } from "react-router-dom";
 import style from "./style.module.scss";
 import HomePage from "../../pages/HomePage";
@@ -22,4 +22,4 @@ const Content = () => {
     )
 }
 
-export default Content
+export default memo(Content);
