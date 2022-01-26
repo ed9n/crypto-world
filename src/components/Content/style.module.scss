@@ -1,4 +1,7 @@
-.content{
-    padding: 0px 30px 0px 16px;
-    flex-grow: 1;  
+.content {
+    .container_content {
+        max-width: 900px;
+        padding: 0px 30px 0px 16px;
+        flex-grow: 1;
+    }
 }
