@@ -279,55 +279,6 @@
   font-size: 25px;
   font-family: Open Sans;
 }
-/*!***************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/Content/components/CryptoCurrencies/style.module.scss ***!
-  \***************************************************************************************************************************************************************/
-.aIRYD0s1BxAEwGFTej2g {
-  padding: 16px;
-}
-.aIRYD0s1BxAEwGFTej2g .kMfPzrla5V68eJzYW5Np {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-.aIRYD0s1BxAEwGFTej2g .kMfPzrla5V68eJzYW5Np input {
-  padding: 5px;
-  border: 0;
-  border-radius: 10px;
-  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.144);
-  font-size: 10px;
-  font-family: Open Sans;
-}
-.aIRYD0s1BxAEwGFTej2g .kMfPzrla5V68eJzYW5Np input::placeholder {
-  text-align: center;
-  font-size: 9px;
-  font-family: Open Sans;
-}
-.aIRYD0s1BxAEwGFTej2g .RDn6yoMnXlIzxyNw9zqH {
-  display: flex;
-  justify-content: space-between;
-}
-.aIRYD0s1BxAEwGFTej2g .RDn6yoMnXlIzxyNw9zqH .VFYiN_SD3dOwOYdzqmnm {
-  margin-bottom: 20px;
-  font-size: 25px;
-  font-family: Open Sans;
-}
-.aIRYD0s1BxAEwGFTej2g .RDn6yoMnXlIzxyNw9zqH .FyXFOpqTczmCrmf0JxeT {
-  font-size: 17px;
-  font-family: Open Sans;
-  font-weight: 600;
-  text-decoration: none;
-  color: #1467ee;
-}
-.aIRYD0s1BxAEwGFTej2g .RDn6yoMnXlIzxyNw9zqH .FyXFOpqTczmCrmf0JxeT:hover {
-  color: gray;
-  transition: all 0.2s linear;
-}
-.aIRYD0s1BxAEwGFTej2g .UenZv6wK5HymmBltTvN4 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
 /*!*************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/Content/components/CryptoCurrencies/components/DetailCoin/style.module.scss ***!
   \*************************************************************************************************************************************************************************************/
@@ -599,6 +550,55 @@
 }
 ._2yZcBVlxTl0hbHOjdwvX .Ox2u6NohFLTYlE3IeWuR a {
   color: black;
+}
+/*!***************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/Content/components/CryptoCurrencies/style.module.scss ***!
+  \***************************************************************************************************************************************************************/
+.aIRYD0s1BxAEwGFTej2g {
+  padding: 16px;
+}
+.aIRYD0s1BxAEwGFTej2g .kMfPzrla5V68eJzYW5Np {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.aIRYD0s1BxAEwGFTej2g .kMfPzrla5V68eJzYW5Np input {
+  padding: 5px;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.144);
+  font-size: 10px;
+  font-family: Open Sans;
+}
+.aIRYD0s1BxAEwGFTej2g .kMfPzrla5V68eJzYW5Np input::placeholder {
+  text-align: center;
+  font-size: 9px;
+  font-family: Open Sans;
+}
+.aIRYD0s1BxAEwGFTej2g .RDn6yoMnXlIzxyNw9zqH {
+  display: flex;
+  justify-content: space-between;
+}
+.aIRYD0s1BxAEwGFTej2g .RDn6yoMnXlIzxyNw9zqH .VFYiN_SD3dOwOYdzqmnm {
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-family: Open Sans;
+}
+.aIRYD0s1BxAEwGFTej2g .RDn6yoMnXlIzxyNw9zqH .FyXFOpqTczmCrmf0JxeT {
+  font-size: 17px;
+  font-family: Open Sans;
+  font-weight: 600;
+  text-decoration: none;
+  color: #1467ee;
+}
+.aIRYD0s1BxAEwGFTej2g .RDn6yoMnXlIzxyNw9zqH .FyXFOpqTczmCrmf0JxeT:hover {
+  color: gray;
+  transition: all 0.2s linear;
+}
+.aIRYD0s1BxAEwGFTej2g .UenZv6wK5HymmBltTvN4 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 /*!************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/Content/components/WorldNews/components/News/style.module.scss ***!
