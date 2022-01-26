@@ -10,10 +10,8 @@ import ExchangesPage from "pages/ExchangesPage";
 const Content = () => {
     return (
         <div className={style.content}>
-            <div className={style.test}>
-
-
-                <div className={style.container_content}>
+            <div className={style.container}>
+                <div className={style.block_content_items}>
                     <Routes>
                         <Route path="/" element={<HomePage />} />
                         <Route path="/Home" element={<HomePage />} />

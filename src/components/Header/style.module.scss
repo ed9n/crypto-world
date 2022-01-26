@@ -1,30 +1,26 @@
 .header {
-    
-
-    .test {
+    background-color: black;
+    .container {
+        display: grid;
+        grid-template-columns: 5% 95%;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
         max-width: 800px;
-        .block_header {
-            padding: 16px;
-            display: grid;
-            grid-template-columns: 5% 95%;
-            align-items: center;
-            justify-content: center;
-            background-color: #02060b;
 
-            .block_log {
-                grid-row-start: 1;
-                grid-row-end: 2;
-                grid-column-start: 1;
-                grid-column-end: 2;
-            }
+        .block_log {
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
 
-            .block_menu {
-                grid-row-start: 1;
-                grid-row-end: 2;
-                grid-column-start: 2;
-                grid-column-end: 3;
-                margin: 0 auto;
-            }
+        .block_menu {
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            margin: 0 auto;
         }
     }
 }
