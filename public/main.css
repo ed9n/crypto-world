@@ -1,26 +1,53 @@
+/*!***************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/style/fonts.scss ***!
+  \***************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap);
+/*!*******************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/App/style.module.scss ***!
+  \*******************************************************************************************************************************/
+.hDfVRHqgfZFCHd3uevt7 {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 /*!**********************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/Header/style.module.scss ***!
   \**********************************************************************************************************************************/
 .gQGUvMDEepTC9riZ04uF {
-  display: flex;
-  flex-direction: column;
-  background-color: #02060B;
-  min-height: 100vh;
+  padding: 16px;
+  display: grid;
+  grid-template-columns: 5% 95%;
+  align-items: center;
+  justify-content: center;
+  background-color: #02060b;
+}
+.gQGUvMDEepTC9riZ04uF .slz7j3Ovhf_Del57l1gO {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.gQGUvMDEepTC9riZ04uF .xTkZ04qoip_UoLTj_oxc {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  margin: 0 auto;
 }
 /*!**************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/Header/components/Logo/style.module.scss ***!
   \**************************************************************************************************************************************************/
-.gFzuE2kv50fn5MTWpv9f {
-  width: 200px;
+.gFzuE2kv50fn5MTWpv9f .fNCOebr_gRjqk0fQlhvn {
+  margin-left: 50px;
+}
+.gFzuE2kv50fn5MTWpv9f ._dbgSAc0eAwsONAhoduf {
+  width: 60px;
 }
 /*!**************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/Header/components/Menu/style.module.scss ***!
   \**************************************************************************************************************************************************/
-.Qym5BzR8m8nJAAXd3K_p {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.Qym5BzR8m8nJAAXd3K_p MenuItem {
+  margin-right: 15px;
 }
 /*!**********************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/Header/components/Menu/components/MenuItem/style.module.scss ***!
@@ -28,19 +55,707 @@
 .D8JfWrjhucC3L69qgDj8 {
   font-size: 20px;
   text-decoration: none;
-  margin-bottom: 15px;
+  margin-right: 15px;
   color: white;
+  font-family: Open Sans;
 }
 .D8JfWrjhucC3L69qgDj8:last-child {
-  margin-bottom: 0px;
+  margin-right: 0px;
 }
 
 .wV10Awx1Q99968Gly0Go {
-  color: #FFDE59;
+  color: #F7BE21;
 }
-/*!*******************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/App/style.module.scss ***!
-  \*******************************************************************************************************************************/
-.BseglIEgZPHUDCbxunDB {
+/*!***********************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/Content/style.module.scss ***!
+  \***********************************************************************************************************************************/
+.eTTtVchPo2Vz_EwAl36v {
+  padding: 0px 30px 0px 16px;
+  flex-grow: 1;
+}
+/*!********************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/Content/components/CoinTable/style.module.scss ***!
+  \********************************************************************************************************************************************************/
+.LR98zepZAK5sDRVMAEMd {
+  padding: 16px;
+}
+.LR98zepZAK5sDRVMAEMd .AitvXCv_a5tLrWrICxRP {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 15px;
+}
+.LR98zepZAK5sDRVMAEMd .AitvXCv_a5tLrWrICxRP .c9v4lMb4Mx33TabXiGFG {
+  font-size: 25px;
+  font-family: Open Sans;
+}
+.LR98zepZAK5sDRVMAEMd .AitvXCv_a5tLrWrICxRP .XEcCPu2PZu2cKzY7kxgS {
+  font-size: 17px;
+  font-family: Open Sans;
+  font-weight: 600;
+  text-decoration: none;
+  color: #1467ee;
+  align-self: flex-end;
+}
+.LR98zepZAK5sDRVMAEMd .AitvXCv_a5tLrWrICxRP .XEcCPu2PZu2cKzY7kxgS:hover {
+  color: gray;
+  transition: all 0.2s linear;
+}
+.LR98zepZAK5sDRVMAEMd .mMsutT7FM7uUas6srsw5 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/*!*************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/Content/components/CoinTable/components/Coins/style.module.scss ***!
+  \*************************************************************************************************************************************************************************/
+.dl_TlfvA9Kfs570oqCY7 {
+  text-decoration: none;
+  color: black;
+}
+.dl_TlfvA9Kfs570oqCY7 .nH4NUvLOlCtQbpjUGbPR {
+  margin: 0 20px 20px 20px;
+  padding: 16px;
+  background-color: #8080801f;
+  border-radius: 5px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  width: 200px;
+}
+.dl_TlfvA9Kfs570oqCY7 .nH4NUvLOlCtQbpjUGbPR:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s linear;
+}
+.dl_TlfvA9Kfs570oqCY7 .nH4NUvLOlCtQbpjUGbPR .hHOJzpSISTPPGbBuqej4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+.dl_TlfvA9Kfs570oqCY7 .nH4NUvLOlCtQbpjUGbPR .hHOJzpSISTPPGbBuqej4 img {
+  width: 30px;
+}
+.dl_TlfvA9Kfs570oqCY7 .nH4NUvLOlCtQbpjUGbPR .hHOJzpSISTPPGbBuqej4 .NXoKd9ru5ax7UGRVdOk0 {
+  font-family: Open Sans;
+  font-size: 12px;
+}
+.dl_TlfvA9Kfs570oqCY7 .nH4NUvLOlCtQbpjUGbPR .Y00szJauxGNrJJMkpRsD {
+  font-family: Open Sans;
+}
+.dl_TlfvA9Kfs570oqCY7 .nH4NUvLOlCtQbpjUGbPR .Y00szJauxGNrJJMkpRsD .JmwKKVK4kyxqJ5DGCeyp {
   display: flex;
 }
+.dl_TlfvA9Kfs570oqCY7 .nH4NUvLOlCtQbpjUGbPR .Y00szJauxGNrJJMkpRsD .JmwKKVK4kyxqJ5DGCeyp .rG9G9nvdrF_hpqoXYWRl {
+  margin: 0 5px 15px 0;
+  font-size: 12px;
+}
+.dl_TlfvA9Kfs570oqCY7 .nH4NUvLOlCtQbpjUGbPR .Y00szJauxGNrJJMkpRsD .JmwKKVK4kyxqJ5DGCeyp ._MRhPIL4jDH3DK2CfRzk {
+  font-size: 12px;
+  font-weight: 600;
+}
+.dl_TlfvA9Kfs570oqCY7 .nH4NUvLOlCtQbpjUGbPR .Y00szJauxGNrJJMkpRsD .CXupkvMhqr50vELwQPu2 {
+  display: flex;
+}
+.dl_TlfvA9Kfs570oqCY7 .nH4NUvLOlCtQbpjUGbPR .Y00szJauxGNrJJMkpRsD .CXupkvMhqr50vELwQPu2 .q6ocqCgAWeL4wfR12fi2 {
+  margin: 0 5px 15px 0;
+  font-size: 12px;
+}
+.dl_TlfvA9Kfs570oqCY7 .nH4NUvLOlCtQbpjUGbPR .Y00szJauxGNrJJMkpRsD .CXupkvMhqr50vELwQPu2 .S7HWc7oZAJNisYu6UUuP {
+  font-size: 12px;
+  font-weight: 600;
+}
+.dl_TlfvA9Kfs570oqCY7 .nH4NUvLOlCtQbpjUGbPR .Y00szJauxGNrJJMkpRsD .YDjs4ZHTs6LUyf7lPHDt {
+  display: flex;
+}
+.dl_TlfvA9Kfs570oqCY7 .nH4NUvLOlCtQbpjUGbPR .Y00szJauxGNrJJMkpRsD .YDjs4ZHTs6LUyf7lPHDt .JFmrhrMrd4Ol64R9jLag {
+  margin: 0 5px 15px 0;
+  font-size: 12px;
+}
+.dl_TlfvA9Kfs570oqCY7 .nH4NUvLOlCtQbpjUGbPR .Y00szJauxGNrJJMkpRsD .YDjs4ZHTs6LUyf7lPHDt .IxF3Z1QujjmzEZ1ftCdS {
+  font-size: 12px;
+  font-weight: 600;
+}
+/*!**************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/Content/components/GlobalCryptoStats/components/TotalCoins/style.module.scss ***!
+  \**************************************************************************************************************************************************************************************/
+.BLjSmEfU8hHZfveCwpOA {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  margin-bottom: 30px;
+  font-family: Open Sans;
+}
+.BLjSmEfU8hHZfveCwpOA .lJjwD9PNSIAC9T9SL46i {
+  font-size: 12px;
+  color: #928888;
+}
+.BLjSmEfU8hHZfveCwpOA .Ck8duLqLWpFIbiQQBZe4 {
+  font-weight: 600;
+}
+/*!******************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/Content/components/GlobalCryptoStats/components/Total24hVolume/style.module.scss ***!
+  \******************************************************************************************************************************************************************************************/
+.PsbBRHcFADT8pCi7kQrA {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  font-family: Open Sans;
+}
+.PsbBRHcFADT8pCi7kQrA .hpkG01xxAhDeHoUSyyBQ {
+  font-size: 12px;
+  color: #928888;
+}
+.PsbBRHcFADT8pCi7kQrA .cIGsgmceJeJys08H3ogX {
+  font-weight: 600;
+}
+/*!******************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/Content/components/GlobalCryptoStats/components/TotalExchanges/style.module.scss ***!
+  \******************************************************************************************************************************************************************************************/
+.SsFeNb349DST311KISE9 {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  margin-bottom: 30px;
+  font-family: Open Sans;
+}
+.SsFeNb349DST311KISE9 .BTGrMPiRBjxvQiZVg4Uf {
+  font-size: 12px;
+  color: #928888;
+}
+.SsFeNb349DST311KISE9 .YC0lhXhx33y1m1t4WaTz {
+  font-weight: 600;
+}
+/*!******************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/Content/components/GlobalCryptoStats/components/TotalMarketCap/style.module.scss ***!
+  \******************************************************************************************************************************************************************************************/
+.RP1oAiJBL7aSvtJd4GOe {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  margin-bottom: 30px;
+  font-family: Open Sans;
+}
+.RP1oAiJBL7aSvtJd4GOe .SE68lxnMrn4BXpu2xQck {
+  font-size: 12px;
+  color: #928888;
+}
+.RP1oAiJBL7aSvtJd4GOe .m0W3FrCMIGmTcKzFNfCa {
+  font-weight: 600;
+}
+/*!****************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/Content/components/GlobalCryptoStats/components/TotalMarkets/style.module.scss ***!
+  \****************************************************************************************************************************************************************************************/
+.wjV22OQwjvFwt7w7Bje7 {
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  font-family: Open Sans;
+}
+.wjV22OQwjvFwt7w7Bje7 .UlKcGhqOTrYtDdQr4c_s {
+  font-size: 12px;
+  color: #928888;
+}
+.wjV22OQwjvFwt7w7Bje7 .KhnmG2928x_DjJ15l5Sg {
+  font-weight: 600;
+}
+/*!****************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/Content/components/GlobalCryptoStats/style.module.scss ***!
+  \****************************************************************************************************************************************************************/
+.FfHaAONWE6ixMaeStzMw {
+  display: grid;
+  justify-content: space-around;
+  padding: 16px;
+  margin-bottom: 60px;
+}
+.FfHaAONWE6ixMaeStzMw .rLMguNWXU48Jbz3HOG8C {
+  text-align: center;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-family: Open Sans;
+}
+/*!***************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/Content/components/CryptoCurrencies/style.module.scss ***!
+  \***************************************************************************************************************************************************************/
+.aIRYD0s1BxAEwGFTej2g {
+  padding: 16px;
+}
+.aIRYD0s1BxAEwGFTej2g .kMfPzrla5V68eJzYW5Np {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.aIRYD0s1BxAEwGFTej2g .kMfPzrla5V68eJzYW5Np input {
+  padding: 5px;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.144);
+  font-size: 10px;
+  font-family: Open Sans;
+}
+.aIRYD0s1BxAEwGFTej2g .kMfPzrla5V68eJzYW5Np input::placeholder {
+  text-align: center;
+  font-size: 9px;
+  font-family: Open Sans;
+}
+.aIRYD0s1BxAEwGFTej2g .RDn6yoMnXlIzxyNw9zqH {
+  display: flex;
+  justify-content: space-between;
+}
+.aIRYD0s1BxAEwGFTej2g .RDn6yoMnXlIzxyNw9zqH .VFYiN_SD3dOwOYdzqmnm {
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-family: Open Sans;
+}
+.aIRYD0s1BxAEwGFTej2g .RDn6yoMnXlIzxyNw9zqH .FyXFOpqTczmCrmf0JxeT {
+  font-size: 17px;
+  font-family: Open Sans;
+  font-weight: 600;
+  text-decoration: none;
+  color: #1467ee;
+}
+.aIRYD0s1BxAEwGFTej2g .RDn6yoMnXlIzxyNw9zqH .FyXFOpqTczmCrmf0JxeT:hover {
+  color: gray;
+  transition: all 0.2s linear;
+}
+.aIRYD0s1BxAEwGFTej2g .UenZv6wK5HymmBltTvN4 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/*!*************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/Content/components/CryptoCurrencies/components/DetailCoin/style.module.scss ***!
+  \*************************************************************************************************************************************************************************************/
+.Rp8nTvjp3RLFY_BfuHlc {
+  padding: 16px;
+}
+.Rp8nTvjp3RLFY_BfuHlc .NAH_CXpbunAtNzDuCcg6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.Rp8nTvjp3RLFY_BfuHlc .NAH_CXpbunAtNzDuCcg6 .sPXVMi76eP3ROwflAkPH {
+  font-family: Open Sans;
+  font-size: 25px;
+}
+.Rp8nTvjp3RLFY_BfuHlc .NAH_CXpbunAtNzDuCcg6 img {
+  width: 50px;
+  margin-right: 15px;
+}
+.Rp8nTvjp3RLFY_BfuHlc h3 {
+  margin: 15px 0 5px 0;
+}
+.Rp8nTvjp3RLFY_BfuHlc :last-child a {
+  text-decoration: none;
+}
+.Rp8nTvjp3RLFY_BfuHlc :last-child a:hover {
+  color: gray;
+  transition: all 0.2s linear;
+}
+.Rp8nTvjp3RLFY_BfuHlc .rypHoyufimr1tyNizv4Q {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  column-gap: 20px;
+}
+/*!*****************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/Content/components/CryptoCurrencies/components/DetailCoin/components/Ohlc/style.module.scss ***!
+  \*****************************************************************************************************************************************************************************************************/
+.x5UlXVf3e5MaSwJhQktU {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin-bottom: 30px;
+}
+.x5UlXVf3e5MaSwJhQktU .dEGy4Y97zsTZQZFJnWL2 {
+  margin-bottom: 5px;
+  font-family: Open Sans;
+  font-size: 13px;
+}
+/*!*********************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/Content/components/Exchanges/components/ExchangesItem/style.module.scss ***!
+  \*********************************************************************************************************************************************************************************/
+.z5nByjUkMPUHwF1ZPvQS .SP2bxJ1z0sq_yfMphm1r {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #123468;
+  padding: 12px 0 14px;
+}
+.z5nByjUkMPUHwF1ZPvQS .SP2bxJ1z0sq_yfMphm1r .N6g0OAp1Agu2QfxpYoRy .zbIV2h5eNFOXg0kgGvf2 {
+  display: flex;
+  align-items: center;
+}
+.z5nByjUkMPUHwF1ZPvQS .SP2bxJ1z0sq_yfMphm1r .N6g0OAp1Agu2QfxpYoRy .zbIV2h5eNFOXg0kgGvf2 .vv7qqw50SVsY1d3RTJMO {
+  font-size: 9px;
+  font-family: Open Sans;
+  margin-right: 14px;
+}
+.z5nByjUkMPUHwF1ZPvQS .SP2bxJ1z0sq_yfMphm1r .N6g0OAp1Agu2QfxpYoRy .zbIV2h5eNFOXg0kgGvf2 a {
+  cursor: pointer;
+  color: #000;
+  text-decoration: none;
+}
+.z5nByjUkMPUHwF1ZPvQS .SP2bxJ1z0sq_yfMphm1r .N6g0OAp1Agu2QfxpYoRy .zbIV2h5eNFOXg0kgGvf2 a:hover {
+  color: rgba(209, 209, 209, 0.74);
+}
+.z5nByjUkMPUHwF1ZPvQS .SP2bxJ1z0sq_yfMphm1r .N6g0OAp1Agu2QfxpYoRy .zbIV2h5eNFOXg0kgGvf2 .RVSLp0w1Hvk0hK2bGyYf {
+  width: 20px;
+  margin-right: 4px;
+}
+.z5nByjUkMPUHwF1ZPvQS .SP2bxJ1z0sq_yfMphm1r .N6g0OAp1Agu2QfxpYoRy .zbIV2h5eNFOXg0kgGvf2 .Fvcm7bhc8V_1N6WcyT9f {
+  font-size: 13px;
+  font-family: Open Sans;
+}
+.z5nByjUkMPUHwF1ZPvQS .SP2bxJ1z0sq_yfMphm1r .dRzjyI5EEA7SJZkUl2EW {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.z5nByjUkMPUHwF1ZPvQS .SP2bxJ1z0sq_yfMphm1r .dRzjyI5EEA7SJZkUl2EW .OLaPrGnF7xbBMjUzmPpr {
+  font-size: 10px;
+  font-family: Open Sans;
+}
+.z5nByjUkMPUHwF1ZPvQS .SP2bxJ1z0sq_yfMphm1r .dRzjyI5EEA7SJZkUl2EW .mdjnMF28w7BJD_uczNyP {
+  font-size: 10px;
+  font-family: Open Sans;
+}
+/*!************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/Content/components/Exchanges/components/TopFiveExchanges/style.module.scss ***!
+  \************************************************************************************************************************************************************************************/
+.IrbiweeKNa2VyYDW9IpP {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.IrbiweeKNa2VyYDW9IpP .Gd_EzRS0KMetnOf_jeQ8 h2 {
+  font-size: 20px;
+  font-family: Open Sans;
+  margin-bottom: 10px;
+}
+.IrbiweeKNa2VyYDW9IpP .Gd_EzRS0KMetnOf_jeQ8 p {
+  font-size: 12px;
+  font-family: Open Sans;
+  margin-bottom: 15px;
+}
+.IrbiweeKNa2VyYDW9IpP .Ossq94P4gr3oPCfnsH5A {
+  width: 100%;
+  margin-bottom: 15px;
+}
+.IrbiweeKNa2VyYDW9IpP .Ossq94P4gr3oPCfnsH5A .PHeyDJ0DZ9FCP3uwXe28 .kHdy17dd3WBubQc3XDAO {
+  display: flex;
+  justify-content: space-between;
+}
+.IrbiweeKNa2VyYDW9IpP .Ossq94P4gr3oPCfnsH5A .PHeyDJ0DZ9FCP3uwXe28 .UWSVUFeNm2jdJn9wndyn {
+  font-size: 11px;
+  font-family: Open Sans;
+}
+.IrbiweeKNa2VyYDW9IpP .Ossq94P4gr3oPCfnsH5A .PHeyDJ0DZ9FCP3uwXe28 .s7eGbWSi8qbvCiEG061w {
+  font-size: 11px;
+  font-family: Open Sans;
+}
+.IrbiweeKNa2VyYDW9IpP .r9TemkNq9HzvWRu6FlpJ {
+  display: flex;
+}
+.IrbiweeKNa2VyYDW9IpP .r9TemkNq9HzvWRu6FlpJ a {
+  color: #faf7e9;
+}
+.IrbiweeKNa2VyYDW9IpP .r9TemkNq9HzvWRu6FlpJ a:hover {
+  color: white;
+}
+.IrbiweeKNa2VyYDW9IpP .r9TemkNq9HzvWRu6FlpJ .F746soFqnyvq8qAxzcj3 {
+  background-color: #000000;
+  margin: 0 auto;
+  display: inline-block;
+  border-radius: 50px;
+  padding: 12px 32px 15px;
+  transition: background-color 0.1s ease-out;
+}
+.IrbiweeKNa2VyYDW9IpP .r9TemkNq9HzvWRu6FlpJ .F746soFqnyvq8qAxzcj3:hover {
+  background-color: #4e4e4e;
+}
+/*!************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/Content/components/CryptoCurrencies/components/DetailCoin/components/Description/style.module.scss ***!
+  \************************************************************************************************************************************************************************************************************/
+.f18a_3OFh9U53cGbV42_ {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  margin-bottom: 50px;
+}
+.f18a_3OFh9U53cGbV42_ p {
+  font-size: 12px;
+  font-family: Open Sans;
+}
+.f18a_3OFh9U53cGbV42_ h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-family: Open Sans;
+}
+.f18a_3OFh9U53cGbV42_ h3 {
+  font-size: 13px;
+  font-family: Open Sans;
+}
+.f18a_3OFh9U53cGbV42_ .yNk9MN8RMNY5La2H8Ku3 {
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  font-family: Open Sans;
+}
+.f18a_3OFh9U53cGbV42_ .yNk9MN8RMNY5La2H8Ku3::after {
+  content: "";
+  width: 100%;
+  left: 0;
+  position: absolute;
+  height: 100px;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 100%);
+}
+.f18a_3OFh9U53cGbV42_ .XxaxaJPe2PZVejrkiYqt {
+  height: auto;
+  font-family: Open Sans;
+}
+.f18a_3OFh9U53cGbV42_ .PXMpXaqdJP7V81tucSbg {
+  display: flex;
+  justify-content: center;
+}
+.f18a_3OFh9U53cGbV42_ .PXMpXaqdJP7V81tucSbg .W1yGxPgyYzn7HtQLDym_ {
+  background-color: #ffffff;
+  opacity: 0;
+}
+.f18a_3OFh9U53cGbV42_ .PXMpXaqdJP7V81tucSbg .ecFhRZRCqCKCm67FLX51 {
+  font-family: Open Sans;
+  color: #002c94;
+  background: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, white 100%);
+  font-size: 15px;
+  width: 100%;
+  padding: 10px 0 12px;
+  font-family: inherit;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+/*!*************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/Content/components/CryptoCurrencies/components/DetailCoin/components/ProjectLinks/style.module.scss ***!
+  \*************************************************************************************************************************************************************************************************************/
+.RDfPVGsHn6u2s4BQJz3o {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  margin-bottom: 50px;
+}
+.RDfPVGsHn6u2s4BQJz3o h2 {
+  font-size: 20px;
+  font-family: Open Sans;
+}
+.RDfPVGsHn6u2s4BQJz3o table {
+  width: 100%;
+}
+/*!*********************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/Content/components/CryptoCurrencies/components/DetailCoin/components/ProjectLinks/components/LinkItem/style.module.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************/
+._2yZcBVlxTl0hbHOjdwvX {
+  display: flex;
+  border-bottom: 1px solid #123468;
+  padding: 16px 0 18px;
+  cursor: pointer;
+  align-items: center;
+}
+._2yZcBVlxTl0hbHOjdwvX .BBctKPplU_1zT_rQw4KW {
+  margin-top: -2px;
+  margin-bottom: -4px;
+  margin-right: 11px;
+  display: flex;
+  align-items: center;
+}
+._2yZcBVlxTl0hbHOjdwvX .BBctKPplU_1zT_rQw4KW a {
+  color: black;
+}
+._2yZcBVlxTl0hbHOjdwvX th {
+  flex-grow: 1;
+  text-align: left;
+  margin-right: 20px;
+  font-size: 10px;
+  font-family: Open Sans;
+}
+._2yZcBVlxTl0hbHOjdwvX th a {
+  color: black;
+}
+._2yZcBVlxTl0hbHOjdwvX .Ox2u6NohFLTYlE3IeWuR {
+  font-size: 10px;
+  text-align: end;
+  font-family: Open Sans;
+}
+._2yZcBVlxTl0hbHOjdwvX .Ox2u6NohFLTYlE3IeWuR a {
+  color: black;
+}
+/*!************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/Content/components/WorldNews/components/News/style.module.scss ***!
+  \************************************************************************************************************************************************************************/
+.dXnRYHQhmTWkSW4hDxUW {
+  width: 230px;
+  height: 240px;
+  position: relative;
+  margin-bottom: 16px;
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08);
+  text-decoration: none;
+  margin-right: 40px;
+}
+.dXnRYHQhmTWkSW4hDxUW:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s linear;
+}
+.dXnRYHQhmTWkSW4hDxUW .DwYXzTbXNgUueKSUMziP {
+  height: 100%;
+  cursor: pointer;
+}
+.dXnRYHQhmTWkSW4hDxUW .DwYXzTbXNgUueKSUMziP .atf0UXlS1Z36gPqp_yEq {
+  width: 100%;
+  height: 164px;
+  overflow: hidden;
+}
+.dXnRYHQhmTWkSW4hDxUW .DwYXzTbXNgUueKSUMziP .atf0UXlS1Z36gPqp_yEq img {
+  position: static;
+  transform: none !important;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  object-fit: cover;
+}
+.dXnRYHQhmTWkSW4hDxUW .DwYXzTbXNgUueKSUMziP .PMGv6vOn63cHBQGEDNc2 {
+  padding: 16px;
+}
+.dXnRYHQhmTWkSW4hDxUW .DwYXzTbXNgUueKSUMziP .PMGv6vOn63cHBQGEDNc2 .ko9lPgbVwrrtDa3RLhCO {
+  color: #111;
+  font-size: 11px;
+  font-family: Open Sans;
+  font-weight: bold;
+  max-height: 4.3em;
+  letter-spacing: -0.2px;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.dXnRYHQhmTWkSW4hDxUW .DwYXzTbXNgUueKSUMziP .PMGv6vOn63cHBQGEDNc2 .v_iv7xs2_zyLppkoUhI9 {
+  font-size: 10px;
+  text-align: end;
+  color: #111;
+}
+/*!********************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/Content/components/WorldNews/style.module.scss ***!
+  \********************************************************************************************************************************************************/
+.ELzH7B8UQyjqPlTjs3nG {
+  padding: 16px;
+}
+.ELzH7B8UQyjqPlTjs3nG .ZhEIE91yKEYeCMQMl72n {
+  text-align: center;
+  color: #111;
+  font-size: 25px;
+  font-family: Open Sans;
+  font-weight: bold;
+  margin: 20px 0px 20px 0px;
+}
+.ELzH7B8UQyjqPlTjs3nG .igz258DFLBg8DnbFil0w {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.ELzH7B8UQyjqPlTjs3nG .igz258DFLBg8DnbFil0w input {
+  padding: 5px;
+  width: 200px;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.144);
+  font-size: 10px;
+  font-family: Open Sans;
+}
+.ELzH7B8UQyjqPlTjs3nG .igz258DFLBg8DnbFil0w input::placeholder {
+  text-align: center;
+  font-size: 9px;
+  font-family: Open Sans;
+}
+.ELzH7B8UQyjqPlTjs3nG .YbSge5YUhdcCIuhGqBiw {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+/*!********************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/Content/components/Exchanges/components/AllExchanges/style.module.scss ***!
+  \********************************************************************************************************************************************************************************/
+.AS5FJ5nEeTwSQHb96Hjd {
+  margin-top: 35px;
+  width: 900px;
+}
+.AS5FJ5nEeTwSQHb96Hjd .K7arAt3a15UoHVWuUXLi {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.AS5FJ5nEeTwSQHb96Hjd .K7arAt3a15UoHVWuUXLi h2 {
+  font-size: 25px;
+  font-family: Open Sans;
+}
+.AS5FJ5nEeTwSQHb96Hjd .K7arAt3a15UoHVWuUXLi img {
+  width: 30px;
+  margin-right: 5px;
+}
+.AS5FJ5nEeTwSQHb96Hjd h3 {
+  font-size: 20px;
+  color: rgba(216, 145, 13, 0.924);
+  font-family: Open Sans;
+  text-align: left;
+}
+.AS5FJ5nEeTwSQHb96Hjd .tPAk4LCd9uTstYEntSGA {
+  margin-top: 20px;
+  width: 100%;
+}
+.AS5FJ5nEeTwSQHb96Hjd .tPAk4LCd9uTstYEntSGA .lfHmchWRVs3YHsxLDYCs .Qoce_TgAqszReCDUrb5I {
+  display: flex;
+  justify-content: space-between;
+}
+.AS5FJ5nEeTwSQHb96Hjd .tPAk4LCd9uTstYEntSGA .lfHmchWRVs3YHsxLDYCs .nhB4JzG8GD8oNBqP6NdK {
+  font-size: 11px;
+  font-family: Open Sans;
+}
+.AS5FJ5nEeTwSQHb96Hjd .tPAk4LCd9uTstYEntSGA .lfHmchWRVs3YHsxLDYCs .wdJCD5oFIDicugsYNMFE {
+  font-size: 11px;
+  font-family: Open Sans;
+}
+/*!********************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/Content/components/Exchanges/style.module.scss ***!
+  \********************************************************************************************************************************************************/
+.yYNhffDbwZY27U9KB2VI {
+  display: flex;
+  justify-content: center;
+}
+/*!*****************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/style/default.scss ***!
+  \*****************************************************************************************************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*!*******************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/style/fonts.scss (1) ***!
+  \*******************************************************************************************************************/
+
