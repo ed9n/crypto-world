@@ -13,7 +13,7 @@ import Instagram from "./image/Instagram.svg";
 import Discord from "./image/Discord.svg";
 import Medium from "./image/Medium.svg";
 import SinaWeibo from "./image/SinaWeibo.svg";
-import Vkontakte from "./image/Vkontakte.svg";
+import VKontakte from "./image/VKontakte.svg";
 import LinkedIn from "./image/LinkedIn.svg";
 
 type MapperType = {
@@ -41,7 +41,7 @@ const LinkItem: React.FC<{
         'discord': Discord,
         'medium': Medium,
         'sina-weibo': SinaWeibo,
-        'vkontakte': Vkontakte,
+        'vkontakte': VKontakte,
         'linkedin': LinkedIn
     };
 
