@@ -1,7 +1,6 @@
 import React, { memo, useEffect, useState } from "react";
 import style from "./style.module.scss";
 import Coins from "../CoinTable/components/Coins";
-import * as _ from "lodash";
 import Input from "../../../Form/Input";
 import { getCoinsFifty } from "requests/coins";
 
