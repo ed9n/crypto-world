@@ -9,7 +9,6 @@
       "moduleResolution": "node",
       "allowSyntheticDefaultImports": true,
       "paths": {
-        "components/*": ["./src/components/*"],
         "requests/*": ["./src/requests/*"],
         "keys/*": ["./src/keys/*"],
         "pages/*": ["./src/pages/*"]

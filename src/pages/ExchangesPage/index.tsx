@@ -1,5 +1,5 @@
 import React, { memo } from "react";
-import Exchanges from "components/Content/components/Exchanges";
+import Exchanges from "../../components/Content/components/Exchanges";
 
 const ExchangesPage = () => {
     return(

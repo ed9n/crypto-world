@@ -1,5 +1,5 @@
 import React, { memo } from "react";
-import DetailCoin from "components/Content/components/CryptoCurrencies/components/DetailCoin";
+import DetailCoin from "../../components/Content/components/CryptoCurrencies/components/DetailCoin";
 
 const DetailCoinPage= () => {
     return(

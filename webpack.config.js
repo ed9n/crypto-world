@@ -42,12 +42,7 @@ module.exports = {
     resolve: {
         extensions: ['.tsx', '.ts', '.js'],
         alias: {
-            components: path.resolve(__dirname, 'src/components'),
-            hoc: path.resolve(__dirname, 'src/HOC'),
-            images: path.resolve(__dirname, 'src/images'),
-            video: path.resolve(__dirname, 'src/video'),
             pages: path.resolve(__dirname, 'src/pages'),
-            redux_main: path.resolve(__dirname, 'src/redux'),
             requests: path.resolve(__dirname, 'src/requests'),
             keys: path.resolve(__dirname, 'src/keys'),
         }

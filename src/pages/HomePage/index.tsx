@@ -1,6 +1,6 @@
 import React, { memo } from "react";
-import CoinTable from "components/Content/components/CoinTable";
-import GlobalCryptoStats from "components/Content/components/GlobalCryptoStats";
+import CoinTable from "../../components/Content/components/CoinTable";
+import GlobalCryptoStats from "../../components/Content/components/GlobalCryptoStats";
 
 const HomePage = () => {
     return(

@@ -1,10 +1,10 @@
 import React, { memo, useEffect, useState } from "react";
 import News from "./components/News";
 import style from "./style.module.scss";
-import Input from "components/Form/Input";
+import Input from "../../../Form/Input";
 import { getNews } from "requests/coins";
 
-const CoinNews = () => {
+const WorldNews = () => {
 
     const [news, setNews] = useState([]);
     const [value, setValue] = useState('');
@@ -43,4 +43,4 @@ const CoinNews = () => {
     )
 }
 
-export default memo(CoinNews);
+export default memo(WorldNews);
