@@ -1,11 +1,11 @@
 import React, { memo } from "react";
 import { Route, Routes, } from "react-router-dom";
 import style from "./style.module.scss";
-import HomePage from "../../pages/HomePage";
-import CryptoCurrenciesPage from "../../pages/CryptoCurrenciesPage";
-import DetailCoinPage from "../../pages/DetailCoinPage";
-import NewsPage from "../../pages/NewsPage";
-import ExchangesPage from "../../pages/ExchangesPage";
+import HomePage from "pages/HomePage";
+import CryptoCurrenciesPage from "pages/CryptoCurrenciesPage";
+import DetailCoinPage from "pages/DetailCoinPage";
+import NewsPage from "pages/NewsPage";
+import ExchangesPage from "pages/ExchangesPage";
 
 const Content = () => {
     return (

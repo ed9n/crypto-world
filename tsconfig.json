@@ -12,6 +12,7 @@
         "components/*": ["./src/components/*"],
         "requests/*": ["./src/requests/*"],
         "keys/*": ["./src/keys/*"],
+        "pages/*": ["./src/pages/*"]
       }
     }
   }
