@@ -10,15 +10,19 @@ import ExchangesPage from "pages/ExchangesPage";
 const Content = () => {
     return (
         <div className={style.content}>
-            <div className={style.container_content}>
-                <Routes>
-                    <Route path="/" element={<HomePage />} />
-                    <Route path="/Home" element={<HomePage />} />
-                    <Route path="/Cryptocurrencies" element={<CryptosPage />} />
-                    <Route path="/Cryptocurrencies/:uuid" element={<DetailCoinPage />} />
-                    <Route path="/Exchanges/:uuid" element={<ExchangesPage />} />
-                    <Route path="/News" element={<NewsPage />} />
-                </Routes>
+            <div className={style.test}>
+
+
+                <div className={style.container_content}>
+                    <Routes>
+                        <Route path="/" element={<HomePage />} />
+                        <Route path="/Home" element={<HomePage />} />
+                        <Route path="/Cryptocurrencies" element={<CryptosPage />} />
+                        <Route path="/Cryptocurrencies/:uuid" element={<DetailCoinPage />} />
+                        <Route path="/Exchanges/:uuid" element={<ExchangesPage />} />
+                        <Route path="/News" element={<NewsPage />} />
+                    </Routes>
+                </div>
             </div>
         </div>
 

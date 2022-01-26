@@ -6,12 +6,14 @@ import Menu from "./components/Menu";
 const Header = () => {
     return (
         <div className={style.header}>
-            <div className={style.block_header}>
-                <div className={style.block_logo}>
-                    <Logo />
-                </div>
-                <div className={style.block_menu}>
-                    <Menu />
+            <div className={style.test}>
+                <div className={style.block_header}>
+                    <div className={style.block_logo}>
+                        <Logo />
+                    </div>
+                    <div className={style.block_menu}>
+                        <Menu />
+                    </div>
                 </div>
             </div>
         </div>

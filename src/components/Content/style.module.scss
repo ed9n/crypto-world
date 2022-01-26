@@ -1,8 +1,10 @@
 .content {
-    max-width: 900px;
-    .container_content {
-        
-        padding: 0px 30px 0px 16px;
-        flex-grow: 1;
+    .test {
+        max-width: 900px;
+
+        .container_content {
+            padding: 0px 30px 0px 16px;
+            flex-grow: 1;
+        }
     }
 }
