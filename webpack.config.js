@@ -36,7 +36,7 @@ module.exports = {
         },
         open: true,
         liveReload: true,
-        port: 3100,
+        port: 80,
         historyApiFallback: true
     },
     resolve: {
